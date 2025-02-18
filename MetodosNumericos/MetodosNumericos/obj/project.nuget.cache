@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HoiZjIXhyyU=",
+  "dgSpecHash": "R36yBzwD8CI=",
   "success": true,
-  "projectFilePath": "D:\\GIT\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos.csproj",
+  "projectFilePath": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bodoq\\.nuget\\packages\\microsoft.aspnetcore.authorization\\9.0.0\\microsoft.aspnetcore.authorization.9.0.0.nupkg.sha512",
     "C:\\Users\\bodoq\\.nuget\\packages\\microsoft.aspnetcore.components\\9.0.0\\microsoft.aspnetcore.components.9.0.0.nupkg.sha512",
