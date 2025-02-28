@@ -1,0 +1,106 @@
+﻿@page "/actividad2"
+@inject IJSRuntime JSRuntime
+
+<PageTitle>Weather</PageTitle>
+
+<link rel="stylesheet" href="css/Actividad2/style.css">
+
+<div id="topT">
+    <div id="menu_title">
+        <a id="title">Actividad 3</a>
+    </div>
+</div>
+<div id="cont">
+    <div id="controls">
+        <div class="methods">
+            <div class="fnc">
+                <button class="btnfn" id="a">x3 + 4x2 -10</button>
+                <button class="btnfn" id="b">x3 - 2x2 - 5 </button>
+                <button class="btnfn" id="c">x3 + 3x2 - 1</button>
+            </div>
+            <div class="fnc">
+                <button class="btnfn" id="d">x - cos(x)</button>
+                <button class="btnfn" id="e">ex + 2^(-x) + 2cos(x) - 6 </button>
+            </div>
+
+        </div>
+        <div class="methods">
+            <div class="fnc">
+                <button class="btnmtd" id="btnBS">Bisección</button>
+                <button class="btnmtd" id="btnNR">Newton Raphson</button>
+                <button class="btnmtd" id="btnSC">Secante</button>
+            </div>
+            <div class="fnc">
+                <button class="btnmtd" id="btnPF">Punto Fijo</button>
+                <button class="btnmtd" id="btnRF">Regla Falsa</button>
+                <button class="btnmtd" id="btnRFM">Regla Falsa M</button>
+            </div>
+
+        </div>
+        <div>
+            <div id="pol" class="mnpl">
+            </div>
+        </div>
+
+        <div id="parameters">
+            <div class="cont">
+                <span style="padding-bottom: 5px;"> intervalo [ a , b ] </span>
+                <input id="ainput" class="inter" type="text" placeholder="[a">
+                <input id="binput" class="inter" type="text" placeholder="b]">
+            </div>
+
+            <div class="cont">
+                <span style="padding-bottom: 5px;"> Puntos iniciales </span>
+                <input id="p0" class="inter" type="text" placeholder="p0">
+                <input id="p1" class="inter" type="text" placeholder="p1">
+            </div>
+            <div class="cont">
+                <input id="tol" class="inter" type="text" placeholder="tolerancia">
+                <input id="miter" class="inter" type="text" placeholder="iter max">
+            </div>
+
+
+        </div>
+
+        <div class="cont ">
+            <a>Iteracion: </a>
+            <input type="range" id="slider" min="1" max="100" value="1">
+            <a id="sliderV">1</a>
+        </div>
+
+        <div class="cont">
+            <button class="btng" id="graf">GRAFICAR</button>
+            <button class="btng" id="anim">ANIMAR</button>
+        </div>
+
+    </div>
+
+    <div style=" width: 65%; margin: auto; align-items: center; justify-content: center;">
+        <canvas id="myChart"></canvas>
+        
+        <span id="lbl">
+            <a id="lblraiz">Raiz: </a>
+            <div id="err">
+                <a id="lblerr">Error absoluto:</a>
+            </div>
+
+        </span>
+
+    </div>
+
+</div>
+
+<div id="cont-t">
+    <table id="tabla"></table>
+</div>
+
+@code {
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            // Llama a la función JavaScript para inicializar el gráfico
+            await JSRuntime.InvokeVoidAsync("initializeChart2");
+        }
+    }
+}

@@ -1,0 +1,261 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\bin\\Debug\\net9.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\obj\\Debug\\net9.0\\scopedcss\\bundle\\MetodosNumericos.styles.css",
+      "PackagePath": "staticwebassets\\MetodosNumericos.styles.css"
+    },
+    {
+      "Id": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\wwwroot\\css\\Actividad1\\style.css",
+      "PackagePath": "staticwebassets\\css\\Actividad1\\style.css"
+    },
+    {
+      "Id": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\wwwroot\\css\\Actividad2\\style.css",
+      "PackagePath": "staticwebassets\\css\\Actividad2\\style.css"
+    },
+    {
+      "Id": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\wwwroot\\icon-192.png",
+      "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+      "Id": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\wwwroot\\js\\Actividad1\\main.js",
+      "PackagePath": "staticwebassets\\js\\Actividad1\\main.js"
+    },
+    {
+      "Id": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\wwwroot\\js\\Actividad2\\functions.js",
+      "PackagePath": "staticwebassets\\js\\Actividad2\\functions.js"
+    },
+    {
+      "Id": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\wwwroot\\js\\Actividad2\\main.js",
+      "PackagePath": "staticwebassets\\js\\Actividad2\\main.js"
+    },
+    {
+      "Id": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\wwwroot\\js\\Actividad2\\methods.js",
+      "PackagePath": "staticwebassets\\js\\Actividad2\\methods.js"
+    },
+    {
+      "Id": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\wwwroot\\js\\chart\\chart.js",
+      "PackagePath": "staticwebassets\\js\\chart\\chart.js"
+    },
+    {
+      "Id": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\wwwroot\\js\\chart\\chartjs-plugin-annotation.js",
+      "PackagePath": "staticwebassets\\js\\chart\\chartjs-plugin-annotation.js"
+    },
+    {
+      "Id": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\wwwroot\\js\\chart\\chartjs-plugin-zoom.js",
+      "PackagePath": "staticwebassets\\js\\chart\\chartjs-plugin-zoom.js"
+    },
+    {
+      "Id": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.MetodosNumericos.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.MetodosNumericos.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.MetodosNumericos.props",
+      "PackagePath": "build\\MetodosNumericos.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.MetodosNumericos.props",
+      "PackagePath": "buildMultiTargeting\\MetodosNumericos.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.MetodosNumericos.props",
+      "PackagePath": "buildTransitive\\MetodosNumericos.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

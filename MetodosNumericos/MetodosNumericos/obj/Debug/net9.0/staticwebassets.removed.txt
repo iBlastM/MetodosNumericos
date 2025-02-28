@@ -1,0 +1,3 @@
+D:\GIT\MN\MetodosNumericos\MetodosNumericos\MetodosNumericos\wwwroot\js\Actividad1\chartjs-plugin-annotation.js
+D:\GIT\MN\MetodosNumericos\MetodosNumericos\MetodosNumericos\wwwroot\sample-data\weather.json
+D:\GIT\MN\MetodosNumericos\MetodosNumericos\MetodosNumericos\wwwroot\js\Actividad1\chart.js

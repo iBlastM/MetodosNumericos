@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MetodosNumericos")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+50f2db1054c3b1395d2331d84ac8576e4fadbead")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+52067ad296f84f9aefed874d8a516db3d0969010")]
 [assembly: System.Reflection.AssemblyProductAttribute("MetodosNumericos")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MetodosNumericos")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

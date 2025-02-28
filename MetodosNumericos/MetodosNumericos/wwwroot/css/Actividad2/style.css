@@ -1,0 +1,206 @@
+html, body {
+    height: 100%; /* Ensure the body takes up the full height of the viewport */
+    margin: 0;    /* Remove default margin */
+    padding: 0;   /* Remove default padding */
+    display: flex;
+    flex-direction: column;
+    
+    font-family: Helvetica, sans-serif;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    border-radius: 10px; /* Bordes redondeados para la tabla */
+    overflow: hidden;
+    margin-bottom: 20px;
+    border: solid black 2px;
+    box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.2);
+}
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color:  rgb(141, 209, 38);
+}
+
+/* Redondear solo las esquinas exteriores de la tabla */
+tr:first-child th:first-child {
+    border-top-left-radius: 10px;
+}
+tr:first-child th:last-child {
+    border-top-right-radius: 10px;
+}
+tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+}
+tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+}
+
+#cont-t{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+   
+}
+
+#cont{
+   
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#controls{
+    width: 25%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 3%;
+    border-radius: 20px ;
+    border: solid black 2px;
+    box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.2);
+
+}
+
+
+#parameters{
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.methods{
+    width: 95%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-bottom: solid rgba(0, 0 ,0 ,0.5) 1px;
+    align-items: center;
+    
+}
+
+.cont{
+    
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.btnfn,.btnmtd {
+    width: 90px;
+    height: 40px;
+    background-color: rgb(141, 209, 38);
+    border-radius: 10px;
+    border: solid  rgb(141, 209, 38) 0px ;
+    color: #ffffff;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.btnfn:hover,.btnmtd:hover, .btng:hover{
+    transform: scale(1.1);
+}
+
+.btng{
+    width: 90px;
+    height: 40px;
+    background-color: rgb(205, 165, 250);
+    border-radius: 10px;
+    font-weight: 600;
+    border: solid  rgb(141, 209, 38) 0px ;
+    color: '#fff';
+    transition: all 0.2s ease;
+}
+
+#topT{
+    
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #0a0a0a;
+}
+
+#menu_title{
+
+    display: flex;
+    height: inherit;
+    width: 15%;
+    align-items: center;
+    justify-content: center;
+    background-color: #0a0a0a;
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+
+}
+
+
+
+#title{
+    padding: 2%;
+}
+.fnc{
+    
+    display: flex;
+    flex-direction: row;
+    width: inherit;
+    height: 45%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+input{
+    border-radius: 6px;
+    border: solid rgb(141, 209, 38)  1px;
+    padding: 3px;
+    padding-left: 5px;
+    width: 90px;
+}
+
+#ainput ,#binput, #p0, #p1{
+    width: 60px;
+    margin-left: 5px;
+}
+
+#lbl{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#err{
+    width: 50%;
+}
+
+.pol-item{
+    background-color: rgb(141, 209, 38)  ;
+    margin-left:  5px;
+    color: #fff;
+    margin-top:  5px;
+    padding: 5px;
+    transition: all 0.2s ease;
+    border-radius: 5px;
+    font-size: small;
+
+}
+
+.pol-item:hover{
+    transform: scale(1.1);
+    background-color: black;
+}

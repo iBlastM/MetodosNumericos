@@ -1,0 +1,73 @@
+﻿@page "/actividad1"
+@inject IJSRuntime JSRuntime
+
+<PageTitle>Counter</PageTitle>
+
+<head>
+    <link rel="stylesheet" href="css/Actividad1/style.css">
+
+
+</head>
+
+
+
+<div id="topT">
+    <div id="menu_title">
+        <a id="title">Actividad 1</a>
+    </div>
+</div>
+
+<div id="app">
+    <div id="menu">
+        <div id="cont-but">
+            <div class="row-but">
+                <button class="but" id="exp">e^x</button>
+                <button class="but" id="nexp">e^-x</button>
+                <button class="but" id="sen">sen(x)</button>
+            </div>
+            <div class="row-but">
+                <button class="but" id="cos">cos(x)</button>
+                <button class="but" id="senh">senh(x)</button>
+                <button class="but" id="cosh">cosh(x)</button>
+            </div>
+            <div class="row-but">
+                <button class="but" id="ln">ln(1+x)</button>
+            </div>
+        </div>
+
+        <div id="cont-inter">
+            <span>- intervalo [ a , b ] -</span>
+            <input id="ainput" class="inter" type="text" placeholder="[a">
+            <input id="binput" class="inter" type="text" placeholder="b]">
+        </div>
+
+        <div class="sld">
+            <input id="gradosinp" type="text" placeholder="grados">
+        </div>
+
+        <div class="sld">
+            <input type="text" id="sliderN" placeholder="n">
+        </div>
+
+        <div>
+            <button id="grfbtn">Graficar</button>
+        </div>
+    </div>
+
+    <div style="width: 70%; margin: auto; ">
+        <canvas id="lineChart"></canvas>
+    </div>
+</div>
+
+
+
+@code {
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            // Llama a la función JavaScript para inicializar el gráfico
+            await JSRuntime.InvokeVoidAsync("initializeChart");
+        }
+    }
+}

@@ -28,16 +28,16 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GIT/MN/MetodosNumericos/MetodosNumericos/MetodosNumericos/Pages/Counter.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+[D:/GIT/MN/MetodosNumericos/MetodosNumericos/MetodosNumericos/Pages/Actividad1.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWN0aXZpZGFkMS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/GIT/MN/MetodosNumericos/MetodosNumericos/MetodosNumericos/Pages/Actividad2.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWN0aXZpZGFkMi5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/GIT/MN/MetodosNumericos/MetodosNumericos/MetodosNumericos/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/GIT/MN/MetodosNumericos/MetodosNumericos/MetodosNumericos/Pages/Weather.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV2VhdGhlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/GIT/MN/MetodosNumericos/MetodosNumericos/MetodosNumericos/_Imports.razor]
