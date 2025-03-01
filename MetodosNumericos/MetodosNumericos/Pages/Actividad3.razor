@@ -1,0 +1,114 @@
+﻿@page "/actividad3"
+
+<h3 class="text-center">Actividad 3 - Interpolación</h3>
+
+<div class="container mt-4">
+    <!-- Formulario para ingresar datos -->
+    <div class="card card-form">
+        <h5 class="card-title">Ingresar datos</h5>
+        <EditForm Model="@nuevoPunto" OnValidSubmit="@AgregarPunto">
+            <div class="row">
+                <div class="col-md-5 form-group">
+                    <label class="form-label">X:</label>
+                    <InputNumber class="form-control" @bind-Value="nuevoPunto.X" />
+                </div>
+                <div class="col-md-5 form-group">
+                    <label class="form-label">F(X):</label>
+                    <InputNumber class="form-control" @bind-Value="nuevoPunto.FX" />
+                </div>
+                <div class="col-md-2 d-flex align-items-end">
+                    <button type="submit" class="btn btn-primary btn-submit">Agregar</button>
+                </div>
+            </div>
+        </EditForm>
+
+        @if (!string.IsNullOrEmpty(mensajeErrorPuntoExistente))
+        {
+            <div class="alert alert-danger mt-2">@mensajeErrorPuntoExistente</div>
+        }
+    </div>
+
+    <!-- Tabla de datos ingresados -->
+    <div class="table-container">
+        <h5>Datos Ingresados</h5>
+        <table class="table table-striped table-bordered table-custom">
+            <thead>
+                <tr>
+                    <th class="col-seleccionar">Seleccionar</th>
+                    <th>X</th>
+                    <th>F(X)</th>
+                    <th class="col-seleccionar">Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var punto in puntos)
+                {
+                    <tr>
+                        <td class="col-seleccionar">
+                            <InputCheckbox @bind-Value="punto.Seleccionado" />
+                        </td>
+                        <td>@punto.X</td>
+                        <td>@punto.FX</td>
+                        <td class="col-seleccionar">
+                            <button class="btn btn-danger btn-sm" @onclick="() => EliminarPunto(punto)">Eliminar</button>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Lista de puntos seleccionados -->
+    <div class="mt-4">
+        <h5>Puntos Seleccionados</h5>
+        <ul>
+            @foreach (var punto in puntosSeleccionados)
+            {
+                <li>X: @punto.X, F(X): @punto.FX</li>
+            }
+        </ul>
+    </div>
+</div>
+
+    <!-- Opciones de interpolación -->
+    <div class="interpolation-options card card-form mt-4">
+        <h5 class="card-title">Configuración de Interpolación</h5>
+        <div class="row">
+            <!-- Selección del grado de interpolación -->
+            <div class="col-md-4 form-group">
+                <label class="form-label">Grado de Interpolación (ng):</label>
+                <InputNumber class="form-control" @bind-Value="gradoInterpolacion" />
+            </div>
+
+            <!-- X a interpolar -->
+            <div class="col-md-4 form-group">
+                <label class="form-label">Valor de X para interpolar:</label>
+                <InputNumber class="form-control" @bind-Value="xInterpolar" />
+            </div>
+        </div>
+
+        <!-- Selección de método de interpolación -->
+        <label for="metodo">Seleccione el método de interpolación:</label>
+        <select id="metodo" class="form-control" @bind="metodoSeleccionado">
+            <option value="Lagrange">Interpolación de Lagrange</option>
+            <option value="DiferenciasDivididas">Diferencias Divididas</option>
+            <option value="Neville">Método de Neville</option>
+        </select>
+
+        <div class="d-flex justify-content-center mt-3">
+            <button class="btn btn-success" @onclick="CalcularInterpolacion">Calcular P(X)</button>
+        </div>
+
+        @if (!string.IsNullOrEmpty(mensajeErrorGradoPolinomioErroneo))
+        {
+        <div class="alert alert-danger mt-2">@mensajeErrorGradoPolinomioErroneo</div>
+        }
+
+        <!-- Mostrar resultado -->
+        @if (resultadoInterpolacion.HasValue)
+        {
+            <div class="alert alert-info mt-3 text-center">
+                P(@xInterpolar) ≈ @resultadoInterpolacion.Value
+            </div>
+        }
+    </div>

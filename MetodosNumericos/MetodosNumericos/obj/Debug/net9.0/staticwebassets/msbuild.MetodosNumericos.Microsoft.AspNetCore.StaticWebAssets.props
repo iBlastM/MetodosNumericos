@@ -1038,8 +1038,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName>ScopedCss</AssetTraitName>
       <AssetTraitValue>ApplicationBundle</AssetTraitValue>
-      <Fingerprint>fe1qffdwg9</Fingerprint>
-      <Integrity>l2SS9V1R05AXZ+T8O2Tu41bOb6+Ar7/hdNZO0gpLIvg=</Integrity>
+      <Fingerprint>pbx054fcgk</Fingerprint>
+      <Integrity>tU0IAh2NcnkSfkSH+rmdHrTAPf4c2cOJt/0yn029PUo=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\MetodosNumericos.styles.css'))</OriginalItemSpec>

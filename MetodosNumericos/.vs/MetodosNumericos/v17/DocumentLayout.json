@@ -3,28 +3,16 @@
   "WorkspaceRootPath": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1CA025C2-16CF-4425-A0B2-246B44D0F46E}|MetodosNumericos\\MetodosNumericos.csproj|d:\\git\\mn\\metodosnumericos\\metodosnumericos\\metodosnumericos\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1CA025C2-16CF-4425-A0B2-246B44D0F46E}|MetodosNumericos\\MetodosNumericos.csproj|solutionrelative:metodosnumericos\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{1CA025C2-16CF-4425-A0B2-246B44D0F46E}|MetodosNumericos\\MetodosNumericos.csproj|d:\\git\\mn\\metodosnumericos\\metodosnumericos\\metodosnumericos\\pages\\actividad3.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CA025C2-16CF-4425-A0B2-246B44D0F46E}|MetodosNumericos\\MetodosNumericos.csproj|solutionrelative:metodosnumericos\\pages\\actividad3.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1CA025C2-16CF-4425-A0B2-246B44D0F46E}|MetodosNumericos\\MetodosNumericos.csproj|d:\\git\\mn\\metodosnumericos\\metodosnumericos\\metodosnumericos\\wwwroot\\js\\actividad2\\methods.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{1CA025C2-16CF-4425-A0B2-246B44D0F46E}|MetodosNumericos\\MetodosNumericos.csproj|solutionrelative:metodosnumericos\\wwwroot\\js\\actividad2\\methods.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{866DD3CE-7BCA-4298-BE4F-C4DDAFA45E9E}|MetodosInterpolacion\\MetodosInterpolacion.csproj|d:\\git\\mn\\metodosnumericos\\metodosnumericos\\metodosinterpolacion\\metodos\\diferenciasdivididas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{866DD3CE-7BCA-4298-BE4F-C4DDAFA45E9E}|MetodosInterpolacion\\MetodosInterpolacion.csproj|solutionrelative:metodosinterpolacion\\metodos\\diferenciasdivididas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1CA025C2-16CF-4425-A0B2-246B44D0F46E}|MetodosNumericos\\MetodosNumericos.csproj|d:\\git\\mn\\metodosnumericos\\metodosnumericos\\metodosnumericos\\wwwroot\\js\\actividad1\\main.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{1CA025C2-16CF-4425-A0B2-246B44D0F46E}|MetodosNumericos\\MetodosNumericos.csproj|solutionrelative:metodosnumericos\\wwwroot\\js\\actividad1\\main.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1CA025C2-16CF-4425-A0B2-246B44D0F46E}|MetodosNumericos\\MetodosNumericos.csproj|d:\\git\\mn\\metodosnumericos\\metodosnumericos\\metodosnumericos\\wwwroot\\js\\actividad2\\main.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{1CA025C2-16CF-4425-A0B2-246B44D0F46E}|MetodosNumericos\\MetodosNumericos.csproj|solutionrelative:metodosnumericos\\wwwroot\\js\\actividad2\\main.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1CA025C2-16CF-4425-A0B2-246B44D0F46E}|MetodosNumericos\\MetodosNumericos.csproj|d:\\git\\mn\\metodosnumericos\\metodosnumericos\\metodosnumericos\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1CA025C2-16CF-4425-A0B2-246B44D0F46E}|MetodosNumericos\\MetodosNumericos.csproj|solutionrelative:metodosnumericos\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1CA025C2-16CF-4425-A0B2-246B44D0F46E}|MetodosNumericos\\MetodosNumericos.csproj|d:\\git\\mn\\metodosnumericos\\metodosnumericos\\metodosnumericos\\pages\\actividad2.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1CA025C2-16CF-4425-A0B2-246B44D0F46E}|MetodosNumericos\\MetodosNumericos.csproj|solutionrelative:metodosnumericos\\pages\\actividad2.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{1CA025C2-16CF-4425-A0B2-246B44D0F46E}|MetodosNumericos\\MetodosNumericos.csproj|d:\\git\\mn\\metodosnumericos\\metodosnumericos\\metodosnumericos\\pages\\actividad3.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1CA025C2-16CF-4425-A0B2-246B44D0F46E}|MetodosNumericos\\MetodosNumericos.csproj|solutionrelative:metodosnumericos\\pages\\actividad3.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,80 +22,46 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MainLayout.razor",
-              "DocumentMoniker": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\Layout\\MainLayout.razor",
-              "RelativeDocumentMoniker": "MetodosNumericos\\Layout\\MainLayout.razor",
-              "ToolTip": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\Layout\\MainLayout.razor",
-              "RelativeToolTip": "MetodosNumericos\\Layout\\MainLayout.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "Actividad3.razor",
+              "DocumentMoniker": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\Pages\\Actividad3.razor",
+              "RelativeDocumentMoniker": "MetodosNumericos\\Pages\\Actividad3.razor",
+              "ToolTip": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\Pages\\Actividad3.razor",
+              "RelativeToolTip": "MetodosNumericos\\Pages\\Actividad3.razor",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAAAGcAAABPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-28T10:18:41.323Z",
+              "WhenOpened": "2025-03-01T02:09:29.213Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "methods.js",
-              "DocumentMoniker": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\wwwroot\\js\\Actividad2\\methods.js",
-              "RelativeDocumentMoniker": "MetodosNumericos\\wwwroot\\js\\Actividad2\\methods.js",
-              "ToolTip": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\wwwroot\\js\\Actividad2\\methods.js",
-              "RelativeToolTip": "MetodosNumericos\\wwwroot\\js\\Actividad2\\methods.js",
-              "ViewState": "AgIAAFYAAAAAAAAAAAAQwGYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-02-28T09:44:09.185Z"
+              "Title": "DiferenciasDivididas.cs",
+              "DocumentMoniker": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosInterpolacion\\Metodos\\DiferenciasDivididas.cs",
+              "RelativeDocumentMoniker": "MetodosInterpolacion\\Metodos\\DiferenciasDivididas.cs",
+              "ToolTip": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosInterpolacion\\Metodos\\DiferenciasDivididas.cs",
+              "RelativeToolTip": "MetodosInterpolacion\\Metodos\\DiferenciasDivididas.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T02:28:05.963Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "main.js",
-              "DocumentMoniker": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\wwwroot\\js\\Actividad1\\main.js",
-              "RelativeDocumentMoniker": "MetodosNumericos\\wwwroot\\js\\Actividad1\\main.js",
-              "ToolTip": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\wwwroot\\js\\Actividad1\\main.js",
-              "RelativeToolTip": "MetodosNumericos\\wwwroot\\js\\Actividad1\\main.js",
-              "ViewState": "AgIAAFkAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-02-28T09:26:34.616Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "main.js",
-              "DocumentMoniker": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\wwwroot\\js\\Actividad2\\main.js",
-              "RelativeDocumentMoniker": "MetodosNumericos\\wwwroot\\js\\Actividad2\\main.js",
-              "ToolTip": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\wwwroot\\js\\Actividad2\\main.js",
-              "RelativeToolTip": "MetodosNumericos\\wwwroot\\js\\Actividad2\\main.js",
-              "ViewState": "AgIAADECAAAAAAAAAAAswEICAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-02-28T08:39:22.056Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "index.html",
-              "DocumentMoniker": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\wwwroot\\index.html",
-              "RelativeDocumentMoniker": "MetodosNumericos\\wwwroot\\index.html",
-              "ToolTip": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\wwwroot\\index.html",
-              "RelativeToolTip": "MetodosNumericos\\wwwroot\\index.html",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAwAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-02-28T08:22:05.739Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Actividad2.razor",
-              "DocumentMoniker": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\Pages\\Actividad2.razor",
-              "RelativeDocumentMoniker": "MetodosNumericos\\Pages\\Actividad2.razor",
-              "ToolTip": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\Pages\\Actividad2.razor",
-              "RelativeToolTip": "MetodosNumericos\\Pages\\Actividad2.razor",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAAC8AAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-28T08:17:30.013Z"
+              "DocumentIndex": 0,
+              "Title": "Actividad3.razor.cs",
+              "DocumentMoniker": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\Pages\\Actividad3.razor.cs",
+              "RelativeDocumentMoniker": "MetodosNumericos\\Pages\\Actividad3.razor.cs",
+              "ToolTip": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\Pages\\Actividad3.razor.cs",
+              "RelativeToolTip": "MetodosNumericos\\Pages\\Actividad3.razor.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAowDcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T02:09:37.09Z",
+              "EditorCaption": ""
             }
           ]
         }

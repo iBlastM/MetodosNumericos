@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "MetodosNumericos",
   "resources": {
-    "hash": "sha256-GIqq7Ig6uNRbjyIpPW/GSDKt+Hjk/R/QbJhwqPNjtLg=",
+    "hash": "sha256-gFu0KsEG3x46o4BpmycIESQRiM8UGOI8+lgr5LeDhlA=",
     "fingerprinting": {
       "Microsoft.AspNetCore.Authorization.qe23mgxr71.wasm": "Microsoft.AspNetCore.Authorization.wasm",
       "Microsoft.AspNetCore.Components.flveird317.wasm": "Microsoft.AspNetCore.Components.wasm",
@@ -201,8 +201,10 @@
       "icudt_CJK.tjcz0u77k5.dat": "icudt_CJK.dat",
       "icudt_EFIGS.tptq2av103.dat": "icudt_EFIGS.dat",
       "icudt_no_CJK.lfu7j35m59.dat": "icudt_no_CJK.dat",
-      "MetodosNumericos.tjeg5q4uzx.wasm": "MetodosNumericos.wasm",
-      "MetodosNumericos.gzl72ie9iw.pdb": "MetodosNumericos.pdb"
+      "MetodosInterpolacion.t3bb6wpfnx.wasm": "MetodosInterpolacion.wasm",
+      "MetodosInterpolacion.vvth3j77cn.pdb": "MetodosInterpolacion.pdb",
+      "MetodosNumericos.qbmejb3cqb.wasm": "MetodosNumericos.wasm",
+      "MetodosNumericos.cviq8w3esl.pdb": "MetodosNumericos.pdb"
     },
     "jsModuleNative": {
       "dotnet.native.hmanx9razn.js": "sha256-d7UNSArplVrX3arY2Kmhxp1wN79ng8hLqIBrkiQ9Gbo="
@@ -412,10 +414,12 @@
       "WindowsBase.377bly7twj.wasm": "sha256-0VmBdMjdc0nZGHDSfaGirT6y3mJTM0qx8eqCUC/rpiE=",
       "mscorlib.o0184ey5ia.wasm": "sha256-2GxNKZQJVJvYMUxSTuXa5V2qxawSMMHZtwG33SKVCZU=",
       "netstandard.hb3h2rr8mk.wasm": "sha256-DWn9+RH/ElZQ6imlYqVwZvir1KTzNwY18AzGmnyiymU=",
-      "MetodosNumericos.tjeg5q4uzx.wasm": "sha256-V8UQrEOy4eWdNMOgFb6Wi3DL1LTF5oouv/C6mJP3Kmo="
+      "MetodosInterpolacion.t3bb6wpfnx.wasm": "sha256-B13wzJuf6DrA4y3Z/lU2EImp/PjHvR1MP1r//P/T5xY=",
+      "MetodosNumericos.qbmejb3cqb.wasm": "sha256-hpc0VbiwAI0qbEHajQvlRvR2lkI0+d1CuNh7TLUOqsU="
     },
     "pdb": {
-      "MetodosNumericos.gzl72ie9iw.pdb": "sha256-9KpC32Z+LIq9D85MNByncLVhtOfKnTTRJ1m1MDyl9B8="
+      "MetodosInterpolacion.vvth3j77cn.pdb": "sha256-dQ+XARcznMTBG5KFAUk6K4TZCM1Ub/hlsxm+pIRLj0U=",
+      "MetodosNumericos.cviq8w3esl.pdb": "sha256-+OXWgLg+17jBcnT3kMN3//horEo5jdbxv8Zynt6PWvo="
     }
   },
   "cacheBootResources": true,
