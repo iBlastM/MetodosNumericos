@@ -1,13 +1,14 @@
 using MetodosInterpolacion;
+using MetodosInterpolacion.Metodos;
 
 namespace MetodosNumericos.Pages;
 public partial class Actividad3
 {
     private List<Punto> puntos = new();
     private Punto nuevoPunto = new();
-    private int gradoInterpolacion = 1;
-    private List<Punto> puntosSeleccionados => puntos.Where(p => p.Seleccionado).ToList();
-    private double xInterpolar;
+    private int gradoInterpolacion = 1; // Grado del polinomio de interpolación
+    private List<Punto> puntosSeleccionados => puntos.Where(p => p.Seleccionado).ToList(); //Lista de puntos con los que se va a trabajar
+    private double xInterpolar; // Valor de X para el cual se quiere interpolar
     private double? resultadoInterpolacion;
     private string metodoSeleccionado = "Lagrange"; // Método por defecto
     private string mensajeErrorPuntoExistente = string.Empty;
@@ -57,6 +58,8 @@ public partial class Actividad3
 
     private double InterpolacionLagrange()
     {
+        InterpolacionLagrange interpolacionLagrange = new(puntosSeleccionados, gradoInterpolacion, xInterpolar);
+        interpolacionLagrange.Calcular();
         // Implementa aquí el método de interpolación de Lagrange
         return 0; // Retorna el valor calculado
     }
@@ -64,7 +67,7 @@ public partial class Actividad3
     private double DiferenciasDivididas()
     {
         Console.WriteLine(puntosSeleccionados.Count);
-        //DiferenciasDivididas diferenciasDivididas = new(puntos);
+        DiferenciasDivididas diferenciasDivididas = new(puntosSeleccionados, gradoInterpolacion, xInterpolar);
         return 0; // Retorna el valor calculado
     }
 
