@@ -15,8 +15,8 @@
       "RelativeMoniker": "D:0:0:{866DD3CE-7BCA-4298-BE4F-C4DDAFA45E9E}|MetodosInterpolacion\\MetodosInterpolacion.csproj|solutionrelative:metodosinterpolacion\\metodos\\diferenciasdivididas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{866DD3CE-7BCA-4298-BE4F-C4DDAFA45E9E}|MetodosInterpolacion\\MetodosInterpolacion.csproj|d:\\git\\mn\\metodosnumericos\\metodosnumericos\\metodosinterpolacion\\metodos\\interpolacionlagrange.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{866DD3CE-7BCA-4298-BE4F-C4DDAFA45E9E}|MetodosInterpolacion\\MetodosInterpolacion.csproj|solutionrelative:metodosinterpolacion\\metodos\\interpolacionlagrange.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EFAC511D-4585-4AFA-B248-DF8DC584698F}|ProyectoDePruebas\\ProyectoDePruebas.csproj|d:\\git\\mn\\metodosnumericos\\metodosnumericos\\proyectodepruebas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFAC511D-4585-4AFA-B248-DF8DC584698F}|ProyectoDePruebas\\ProyectoDePruebas.csproj|solutionrelative:proyectodepruebas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,32 +26,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "InterpolacionLagrange.cs",
-              "DocumentMoniker": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosInterpolacion\\Metodos\\InterpolacionLagrange.cs",
-              "RelativeDocumentMoniker": "MetodosInterpolacion\\Metodos\\InterpolacionLagrange.cs",
-              "ToolTip": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosInterpolacion\\Metodos\\InterpolacionLagrange.cs",
-              "RelativeToolTip": "MetodosInterpolacion\\Metodos\\InterpolacionLagrange.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAMAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\ProyectoDePruebas\\Program.cs",
+              "RelativeDocumentMoniker": "ProyectoDePruebas\\Program.cs",
+              "ToolTip": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\ProyectoDePruebas\\Program.cs",
+              "RelativeToolTip": "ProyectoDePruebas\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-01T04:37:48.403Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DiferenciasDivididas.cs",
-              "DocumentMoniker": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosInterpolacion\\Metodos\\DiferenciasDivididas.cs",
-              "RelativeDocumentMoniker": "MetodosInterpolacion\\Metodos\\DiferenciasDivididas.cs",
-              "ToolTip": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosInterpolacion\\Metodos\\DiferenciasDivididas.cs",
-              "RelativeToolTip": "MetodosInterpolacion\\Metodos\\DiferenciasDivididas.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-01T04:37:12.751Z",
+              "WhenOpened": "2025-03-02T07:38:00.81Z",
               "EditorCaption": ""
             },
             {
@@ -62,9 +49,9 @@
               "RelativeDocumentMoniker": "MetodosNumericos\\Pages\\Actividad3.razor",
               "ToolTip": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\Pages\\Actividad3.razor",
               "RelativeToolTip": "MetodosNumericos\\Pages\\Actividad3.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABCAAAAAAAAAA==",
+              "ViewState": "AgIAAIwAAAAAAAAAAAAAwKsAAABeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-01T04:32:43.597Z",
+              "WhenOpened": "2025-03-02T10:14:12.049Z",
               "EditorCaption": ""
             },
             {
@@ -75,9 +62,22 @@
               "RelativeDocumentMoniker": "MetodosNumericos\\Pages\\Actividad3.razor.cs",
               "ToolTip": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\Pages\\Actividad3.razor.cs",
               "RelativeToolTip": "MetodosNumericos\\Pages\\Actividad3.razor.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABPAAAAAAAAAA==",
+              "ViewState": "AgIAAG4AAAAAAAAAAAAcwIUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-01T04:32:40.434Z",
+              "WhenOpened": "2025-03-02T10:04:10.821Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DiferenciasDivididas.cs",
+              "DocumentMoniker": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosInterpolacion\\Metodos\\DiferenciasDivididas.cs",
+              "RelativeDocumentMoniker": "MetodosInterpolacion\\Metodos\\DiferenciasDivididas.cs",
+              "ToolTip": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosInterpolacion\\Metodos\\DiferenciasDivididas.cs",
+              "RelativeToolTip": "MetodosInterpolacion\\Metodos\\DiferenciasDivididas.cs",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAkwFsAAABVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T06:59:28.014Z",
               "EditorCaption": ""
             }
           ]

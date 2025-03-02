@@ -103,12 +103,71 @@
         {
         <div class="alert alert-danger mt-2">@mensajeErrorGradoPolinomioErroneo</div>
         }
+    @if (!string.IsNullOrEmpty(mensajeErrorDatosVacios))
+    {
+        <div class="alert alert-danger mt-2">@mensajeErrorGradoPolinomioErroneo</div>
+    }
 
         <!-- Mostrar resultado -->
+
+    
         @if (resultadoInterpolacion.HasValue)
         {
             <div class="alert alert-info mt-3 text-center">
-                P(@xInterpolar) ≈ @resultadoInterpolacion.Value
+            @switch (metodoSeleccionado)
+            {
+                case "Lagrange":
+                    resultadoInterpolacion = InterpolacionLagrange();
+                    break;
+                case "DiferenciasDivididas":
+                    <h3 class="text-center mt-4">Tabla de Diferencias Divididas</h3>
+
+                    <div class="table-responsive">
+                        <table class="table table-striped table-bordered table-hover text-center shadow-sm">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th>X</th>
+                                    <th>f(Xᵢ)</th>
+                                    @for (int j = 2; j < matrizTablaDiferenciasDivididas.GetLength(1); j++)
+                                    {
+                                        <th>Diferencias Divididas #@(j - 1)</th>
+                                    }
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @for (int i = 0; i < matrizTablaDiferenciasDivididas.GetLength(0); i++) // Filas
+                                {
+                                    <tr>
+                                        @for (int j = 0; j < matrizTablaDiferenciasDivididas.GetLength(1); j++) // Columnas
+                                        {
+                                            <td>
+                                                @(matrizTablaDiferenciasDivididas[i, j] == -0.321123321123321123
+                                                    ? ""
+                                                    : matrizTablaDiferenciasDivididas[i, j])
+                                            </td>
+                                        }
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                    break;
+                case "Neville":
+                    resultadoInterpolacion = MetodoNeville();
+                    break;
+            }
+            <p class="fs-4 fw-bold text-primary">
+                Polinomio en grado @gradoInterpolacion: @polinomioInterpolacion
+            </p>
+            <p class="fs-5 text-success fw-bold text-primary">
+                P(@xInterpolar) = @resultadoInterpolacion.Value ≈ F(@xInterpolar)
+            </p>
             </div>
         }
     </div>
+
+@if (mostrarGrafica)
+{
+    
+    <PlotlyChart @bind-Config="config" @bind-Layout="layout" @bind-Data="data" @ref="chart" />
+}

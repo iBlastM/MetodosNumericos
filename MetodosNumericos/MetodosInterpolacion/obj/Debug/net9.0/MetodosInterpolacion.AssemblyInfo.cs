@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MetodosInterpolacion")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+91b1e3f0809f426df8eb8ef632c56e29d777149c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+625f43ebf4eb5f0a966326713a04a3b8c80e6d2f")]
 [assembly: System.Reflection.AssemblyProductAttribute("MetodosInterpolacion")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MetodosInterpolacion")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

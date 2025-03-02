@@ -1,5 +1,9 @@
 using MetodosInterpolacion;
 using MetodosInterpolacion.Metodos;
+using Plotly.Blazor;
+using Plotly.Blazor.Traces;
+using Plotly.Blazor.Traces.ScatterCarpetLib;
+using Plotly.Blazor.Traces.TableLib;
 
 namespace MetodosNumericos.Pages;
 public partial class Actividad3
@@ -13,7 +17,31 @@ public partial class Actividad3
     private string metodoSeleccionado = "Lagrange"; // Método por defecto
     private string mensajeErrorPuntoExistente = string.Empty;
     private string mensajeErrorGradoPolinomioErroneo = string.Empty;
+    private string mensajeErrorDatosVacios = string.Empty;
+    private double[,] matrizTablaDiferenciasDivididas;
+    private string polinomioInterpolacion;
 
+    private bool mostrarGrafica = false;
+    PlotlyChart chart = new();
+    Plotly.Blazor.Layout layout;
+    Config config;
+    IList<ITrace> data;
+
+    protected override void OnInitialized()
+    {
+        config = new Config();
+        layout = new();
+        data = new List<ITrace>
+            {
+                new Scatter
+                {
+                    Name = "Interpolación",
+                    Mode = Plotly.Blazor.Traces.ScatterLib.ModeFlag.Lines | Plotly.Blazor.Traces.ScatterLib.ModeFlag.Markers,
+                    X = new List<object>{},
+                    Y = new List<object>{}
+                }
+            };
+    }
     private void AgregarPunto()
     {
         if (puntos.Any(p => p.X == nuevoPunto.X))
@@ -26,6 +54,7 @@ public partial class Actividad3
         puntos.Add(new Punto { X = nuevoPunto.X, FX = nuevoPunto.FX });
         puntos = puntos.OrderBy(p => p.X).ToList();
         nuevoPunto = new Punto();
+
     }
 
     private void EliminarPunto(Punto punto)
@@ -34,7 +63,7 @@ public partial class Actividad3
     }
     private void CalcularInterpolacion()
     {
-        if(gradoInterpolacion > puntosSeleccionados.Count - 1 || gradoInterpolacion < 0)
+        if (gradoInterpolacion > puntosSeleccionados.Count - 1 || gradoInterpolacion < 0)
         {
             mensajeErrorGradoPolinomioErroneo = $"El grado del polinomio debe ser menor a la cantidad de puntos seleccionados y mayor o igual que 0.";
             resultadoInterpolacion = null;
@@ -42,6 +71,14 @@ public partial class Actividad3
         }
         mensajeErrorGradoPolinomioErroneo = string.Empty;
         // Aquí se llama al método correspondiente según la selección
+
+        if (puntos.Count == 0 || puntosSeleccionados.Count == 0)
+        {
+            mensajeErrorDatosVacios = $"La tabla de datos esta vacia o no hay ningun punto seleccionado.";
+            return;
+        }
+        mensajeErrorDatosVacios = string.Empty;
+
         switch (metodoSeleccionado)
         {
             case "Lagrange":
@@ -49,6 +86,7 @@ public partial class Actividad3
                 break;
             case "DiferenciasDivididas":
                 resultadoInterpolacion = DiferenciasDivididas();
+                mostrarGrafica = true;
                 break;
             case "Neville":
                 resultadoInterpolacion = MetodoNeville();
@@ -66,9 +104,39 @@ public partial class Actividad3
 
     private double DiferenciasDivididas()
     {
-        Console.WriteLine(puntosSeleccionados.Count);
+        mostrarGrafica = false;
         DiferenciasDivididas diferenciasDivididas = new(puntosSeleccionados, gradoInterpolacion, xInterpolar);
-        return 0; // Retorna el valor calculado
+        matrizTablaDiferenciasDivididas = diferenciasDivididas.tablaDiferenciasDivididas;
+
+        double resultado = diferenciasDivididas.CalcularInterpolacion();
+        polinomioInterpolacion = diferenciasDivididas.polinomioInterpolacion;
+        var x = diferenciasDivididas.puntosGraficar.Select(p => (object)p.X).ToList();
+        var y = diferenciasDivididas.puntosGraficar.Select(p => (object)p.FX).ToList();
+        data = new List<ITrace>
+    {
+        new Scatter
+        {
+            Name = polinomioInterpolacion,
+            Mode = Plotly.Blazor.Traces.ScatterLib.ModeFlag.Lines,
+            X = x,
+            Y = y,
+            Text = polinomioInterpolacion, // Etiquetas,
+            TextPosition = (Plotly.Blazor.Traces.ScatterLib.TextPositionEnum?)TextPositionEnum.MiddleLeft
+        },
+        new Scatter
+        {
+            Name = "Punto interpolado",
+            X = new List<object> { xInterpolar }, // Datos del eje X
+            Y = new List<object> { resultado }, // Datos del eje Y
+            Mode = Plotly.Blazor.Traces.ScatterLib.ModeFlag.Markers, // Modo de la gráfica (líneas y marcadores)
+            Text = "Punto interpolado", // Etiquetas
+            TextPosition = (Plotly.Blazor.Traces.ScatterLib.TextPositionEnum?)TextPositionEnum.MiddleLeft
+        }
+
+    };
+
+
+        return resultado; // Retorna el valor calculado
     }
 
     private double MetodoNeville()
