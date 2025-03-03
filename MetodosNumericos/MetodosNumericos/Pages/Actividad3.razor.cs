@@ -105,7 +105,8 @@ public partial class Actividad3
     private double InterpolacionLagrange()
     {
         InterpolacionLagrange interpolacionLagrange = new(puntosSeleccionados, gradoInterpolacion, xInterpolar);
-        interpolacionLagrange.Calcular();
+        interpolacionLagrange.CalcularInterpolacion();
+        polinomioInterpolacion = interpolacionLagrange.polinomioInterpolacion;
         // Implementa aquí el método de interpolación de Lagrange
         return 0; // Retorna el valor calculado
     }
