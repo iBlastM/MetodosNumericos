@@ -16,9 +16,30 @@ public class InterpolacionLagrange(List<Punto> Puntos, int gradoInterpolacion, d
     {
         polinomioInterpolacion = $"{gradoInterpolacion} P(x) = ";
         GenerarCadenaPolinomio();
-        return 0;
+        double resultadoInterpolacion = CalcularPuntoInterpolado(xInterpolado);
+        return resultadoInterpolacion;
     }
 
+    private double CalcularPuntoInterpolado(double x)
+    {
+        double result = 0;
+        double aux = 1;
+        for (int k = 0; k < gradoInterpolacion + 1; k++)
+        {
+            for (int i = 0; i < gradoInterpolacion + 1; i++)
+            {
+                if (i != k)
+                {
+                    aux *= (x -  puntos[i].X) /( puntos[k].X -  puntos[i].X) ;
+                }
+
+            }
+            aux *= puntos[k].FX;
+            result += aux;
+            aux = 1;
+        }
+        return result;
+    }
 
     private void GenerarCadenaPolinomio()
     {
