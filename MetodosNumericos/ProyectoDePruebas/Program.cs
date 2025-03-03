@@ -30,6 +30,6 @@ static void ImprimirMatriz(double[,] matriz)
         }
         Console.WriteLine(); // Salto de línea al final de cada fila
     }
-    
+    Console.WriteLine("hola"); // Salto de línea al final de la matriz
 
 }
