@@ -1443,8 +1443,8 @@
       ]
     },
     {
-      "Route": "_framework/MetodosNumericos.3kl6kw5rs2.wasm",
-      "AssetFile": "_framework/MetodosNumericos.3kl6kw5rs2.wasm",
+      "Route": "_framework/MetodosNumericos.7427z1nm85.pdb",
+      "AssetFile": "_framework/MetodosNumericos.7427z1nm85.pdb",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1457,168 +1457,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "42261"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/wasm"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"o9Z5a0ekDYRE7G4mijwdHgyure14S6CMLiK2Pmm9vD4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 02 Mar 2025 12:45:51 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "3kl6kw5rs2"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-o9Z5a0ekDYRE7G4mijwdHgyure14S6CMLiK2Pmm9vD4="
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/MetodosNumericos.wasm"
-        }
-      ]
-    },
-    {
-      "Route": "_framework/MetodosNumericos.3kl6kw5rs2.wasm",
-      "AssetFile": "_framework/MetodosNumericos.3kl6kw5rs2.wasm.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000068446270"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "14609"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/wasm"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"3cHJ16wger5aDblOejvusI4Jma6ilbpLwXcZ98RACoE=\""
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"o9Z5a0ekDYRE7G4mijwdHgyure14S6CMLiK2Pmm9vD4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 02 Mar 2025 12:45:52 GMT"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "3kl6kw5rs2"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-o9Z5a0ekDYRE7G4mijwdHgyure14S6CMLiK2Pmm9vD4="
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/MetodosNumericos.wasm"
-        }
-      ]
-    },
-    {
-      "Route": "_framework/MetodosNumericos.3kl6kw5rs2.wasm.gz",
-      "AssetFile": "_framework/MetodosNumericos.3kl6kw5rs2.wasm.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "14609"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/wasm"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"3cHJ16wger5aDblOejvusI4Jma6ilbpLwXcZ98RACoE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 02 Mar 2025 12:45:52 GMT"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "3kl6kw5rs2"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-3cHJ16wger5aDblOejvusI4Jma6ilbpLwXcZ98RACoE="
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/MetodosNumericos.wasm.gz"
-        }
-      ]
-    },
-    {
-      "Route": "_framework/MetodosNumericos.ame85bw82k.pdb",
-      "AssetFile": "_framework/MetodosNumericos.ame85bw82k.pdb",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "32428"
+          "Value": "32496"
         },
         {
           "Name": "Content-Type",
@@ -1626,21 +1465,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Ai1xawINmO8JG2tDfOsszNP5gCFCpo6Jy1QvXn8Ytz4=\""
+          "Value": "\"iWJPw2+EYvaPkxtJOT0BW3Ipm8fGGE3T19ZzViGbNhY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 02 Mar 2025 12:45:51 GMT"
+          "Value": "Mon, 03 Mar 2025 01:46:14 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "ame85bw82k"
+          "Value": "7427z1nm85"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Ai1xawINmO8JG2tDfOsszNP5gCFCpo6Jy1QvXn8Ytz4="
+          "Value": "sha256-iWJPw2+EYvaPkxtJOT0BW3Ipm8fGGE3T19ZzViGbNhY="
         },
         {
           "Name": "label",
@@ -1649,13 +1488,13 @@
       ]
     },
     {
-      "Route": "_framework/MetodosNumericos.ame85bw82k.pdb",
-      "AssetFile": "_framework/MetodosNumericos.ame85bw82k.pdb.gz",
+      "Route": "_framework/MetodosNumericos.7427z1nm85.pdb",
+      "AssetFile": "_framework/MetodosNumericos.7427z1nm85.pdb.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000040783034"
+          "Quality": "0.000040706668"
         }
       ],
       "ResponseHeaders": [
@@ -1673,7 +1512,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "24519"
+          "Value": "24565"
         },
         {
           "Name": "Content-Type",
@@ -1681,15 +1520,15 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Tl7EU5PFxN1gHHxdxWMHScbn7PUd39cWJhZwGCgnIyg=\""
+          "Value": "\"oIJzoUE+uPQZVk0O1SYjirrHtCWgP6ZanV3P/FSGs8M=\""
         },
         {
           "Name": "ETag",
-          "Value": "W/\"Ai1xawINmO8JG2tDfOsszNP5gCFCpo6Jy1QvXn8Ytz4=\""
+          "Value": "W/\"iWJPw2+EYvaPkxtJOT0BW3Ipm8fGGE3T19ZzViGbNhY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 02 Mar 2025 12:45:52 GMT"
+          "Value": "Mon, 03 Mar 2025 01:46:15 GMT"
         },
         {
           "Name": "Vary",
@@ -1699,11 +1538,11 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "ame85bw82k"
+          "Value": "7427z1nm85"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Ai1xawINmO8JG2tDfOsszNP5gCFCpo6Jy1QvXn8Ytz4="
+          "Value": "sha256-iWJPw2+EYvaPkxtJOT0BW3Ipm8fGGE3T19ZzViGbNhY="
         },
         {
           "Name": "label",
@@ -1712,8 +1551,8 @@
       ]
     },
     {
-      "Route": "_framework/MetodosNumericos.ame85bw82k.pdb.gz",
-      "AssetFile": "_framework/MetodosNumericos.ame85bw82k.pdb.gz",
+      "Route": "_framework/MetodosNumericos.7427z1nm85.pdb.gz",
+      "AssetFile": "_framework/MetodosNumericos.7427z1nm85.pdb.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1730,7 +1569,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "24519"
+          "Value": "24565"
         },
         {
           "Name": "Content-Type",
@@ -1738,11 +1577,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Tl7EU5PFxN1gHHxdxWMHScbn7PUd39cWJhZwGCgnIyg=\""
+          "Value": "\"oIJzoUE+uPQZVk0O1SYjirrHtCWgP6ZanV3P/FSGs8M=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 02 Mar 2025 12:45:52 GMT"
+          "Value": "Mon, 03 Mar 2025 01:46:15 GMT"
         },
         {
           "Name": "Vary",
@@ -1752,11 +1591,11 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "ame85bw82k"
+          "Value": "7427z1nm85"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Tl7EU5PFxN1gHHxdxWMHScbn7PUd39cWJhZwGCgnIyg="
+          "Value": "sha256-oIJzoUE+uPQZVk0O1SYjirrHtCWgP6ZanV3P/FSGs8M="
         },
         {
           "Name": "label",
@@ -1766,7 +1605,7 @@
     },
     {
       "Route": "_framework/MetodosNumericos.pdb",
-      "AssetFile": "_framework/MetodosNumericos.ame85bw82k.pdb",
+      "AssetFile": "_framework/MetodosNumericos.7427z1nm85.pdb",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1779,7 +1618,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "32428"
+          "Value": "32496"
         },
         {
           "Name": "Content-Type",
@@ -1787,28 +1626,28 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Ai1xawINmO8JG2tDfOsszNP5gCFCpo6Jy1QvXn8Ytz4=\""
+          "Value": "\"iWJPw2+EYvaPkxtJOT0BW3Ipm8fGGE3T19ZzViGbNhY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 02 Mar 2025 12:45:51 GMT"
+          "Value": "Mon, 03 Mar 2025 01:46:14 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Ai1xawINmO8JG2tDfOsszNP5gCFCpo6Jy1QvXn8Ytz4="
+          "Value": "sha256-iWJPw2+EYvaPkxtJOT0BW3Ipm8fGGE3T19ZzViGbNhY="
         }
       ]
     },
     {
       "Route": "_framework/MetodosNumericos.pdb",
-      "AssetFile": "_framework/MetodosNumericos.ame85bw82k.pdb.gz",
+      "AssetFile": "_framework/MetodosNumericos.7427z1nm85.pdb.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000040783034"
+          "Quality": "0.000040706668"
         }
       ],
       "ResponseHeaders": [
@@ -1826,7 +1665,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "24519"
+          "Value": "24565"
         },
         {
           "Name": "Content-Type",
@@ -1834,15 +1673,15 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Tl7EU5PFxN1gHHxdxWMHScbn7PUd39cWJhZwGCgnIyg=\""
+          "Value": "\"oIJzoUE+uPQZVk0O1SYjirrHtCWgP6ZanV3P/FSGs8M=\""
         },
         {
           "Name": "ETag",
-          "Value": "W/\"Ai1xawINmO8JG2tDfOsszNP5gCFCpo6Jy1QvXn8Ytz4=\""
+          "Value": "W/\"iWJPw2+EYvaPkxtJOT0BW3Ipm8fGGE3T19ZzViGbNhY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 02 Mar 2025 12:45:52 GMT"
+          "Value": "Mon, 03 Mar 2025 01:46:15 GMT"
         },
         {
           "Name": "Vary",
@@ -1852,13 +1691,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Ai1xawINmO8JG2tDfOsszNP5gCFCpo6Jy1QvXn8Ytz4="
+          "Value": "sha256-iWJPw2+EYvaPkxtJOT0BW3Ipm8fGGE3T19ZzViGbNhY="
         }
       ]
     },
     {
       "Route": "_framework/MetodosNumericos.pdb.gz",
-      "AssetFile": "_framework/MetodosNumericos.ame85bw82k.pdb.gz",
+      "AssetFile": "_framework/MetodosNumericos.7427z1nm85.pdb.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1875,7 +1714,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "24519"
+          "Value": "24565"
         },
         {
           "Name": "Content-Type",
@@ -1883,11 +1722,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Tl7EU5PFxN1gHHxdxWMHScbn7PUd39cWJhZwGCgnIyg=\""
+          "Value": "\"oIJzoUE+uPQZVk0O1SYjirrHtCWgP6ZanV3P/FSGs8M=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 02 Mar 2025 12:45:52 GMT"
+          "Value": "Mon, 03 Mar 2025 01:46:15 GMT"
         },
         {
           "Name": "Vary",
@@ -1897,13 +1736,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Tl7EU5PFxN1gHHxdxWMHScbn7PUd39cWJhZwGCgnIyg="
+          "Value": "sha256-oIJzoUE+uPQZVk0O1SYjirrHtCWgP6ZanV3P/FSGs8M="
         }
       ]
     },
     {
       "Route": "_framework/MetodosNumericos.wasm",
-      "AssetFile": "_framework/MetodosNumericos.3kl6kw5rs2.wasm",
+      "AssetFile": "_framework/MetodosNumericos.xxhz6k7nhc.wasm",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1916,7 +1755,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "42261"
+          "Value": "42773"
         },
         {
           "Name": "Content-Type",
@@ -1924,28 +1763,28 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"o9Z5a0ekDYRE7G4mijwdHgyure14S6CMLiK2Pmm9vD4=\""
+          "Value": "\"a/SFy+BPx0yGXL2TwqaIzv5k0/Y7YlcD/gGe7nooOqE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 02 Mar 2025 12:45:51 GMT"
+          "Value": "Mon, 03 Mar 2025 01:46:14 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-o9Z5a0ekDYRE7G4mijwdHgyure14S6CMLiK2Pmm9vD4="
+          "Value": "sha256-a/SFy+BPx0yGXL2TwqaIzv5k0/Y7YlcD/gGe7nooOqE="
         }
       ]
     },
     {
       "Route": "_framework/MetodosNumericos.wasm",
-      "AssetFile": "_framework/MetodosNumericos.3kl6kw5rs2.wasm.gz",
+      "AssetFile": "_framework/MetodosNumericos.xxhz6k7nhc.wasm.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000068446270"
+          "Quality": "0.000067267590"
         }
       ],
       "ResponseHeaders": [
@@ -1963,7 +1802,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "14609"
+          "Value": "14865"
         },
         {
           "Name": "Content-Type",
@@ -1971,15 +1810,15 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"3cHJ16wger5aDblOejvusI4Jma6ilbpLwXcZ98RACoE=\""
+          "Value": "\"t47KoKPpkPG0HIOMX23nKZk3JXh40kbsM3EgH5Gifq8=\""
         },
         {
           "Name": "ETag",
-          "Value": "W/\"o9Z5a0ekDYRE7G4mijwdHgyure14S6CMLiK2Pmm9vD4=\""
+          "Value": "W/\"a/SFy+BPx0yGXL2TwqaIzv5k0/Y7YlcD/gGe7nooOqE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 02 Mar 2025 12:45:52 GMT"
+          "Value": "Mon, 03 Mar 2025 01:46:15 GMT"
         },
         {
           "Name": "Vary",
@@ -1989,13 +1828,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-o9Z5a0ekDYRE7G4mijwdHgyure14S6CMLiK2Pmm9vD4="
+          "Value": "sha256-a/SFy+BPx0yGXL2TwqaIzv5k0/Y7YlcD/gGe7nooOqE="
         }
       ]
     },
     {
       "Route": "_framework/MetodosNumericos.wasm.gz",
-      "AssetFile": "_framework/MetodosNumericos.3kl6kw5rs2.wasm.gz",
+      "AssetFile": "_framework/MetodosNumericos.xxhz6k7nhc.wasm.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2012,7 +1851,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "14609"
+          "Value": "14865"
         },
         {
           "Name": "Content-Type",
@@ -2020,11 +1859,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"3cHJ16wger5aDblOejvusI4Jma6ilbpLwXcZ98RACoE=\""
+          "Value": "\"t47KoKPpkPG0HIOMX23nKZk3JXh40kbsM3EgH5Gifq8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 02 Mar 2025 12:45:52 GMT"
+          "Value": "Mon, 03 Mar 2025 01:46:15 GMT"
         },
         {
           "Name": "Vary",
@@ -2034,7 +1873,168 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-3cHJ16wger5aDblOejvusI4Jma6ilbpLwXcZ98RACoE="
+          "Value": "sha256-t47KoKPpkPG0HIOMX23nKZk3JXh40kbsM3EgH5Gifq8="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/MetodosNumericos.xxhz6k7nhc.wasm",
+      "AssetFile": "_framework/MetodosNumericos.xxhz6k7nhc.wasm",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "42773"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"a/SFy+BPx0yGXL2TwqaIzv5k0/Y7YlcD/gGe7nooOqE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 03 Mar 2025 01:46:14 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xxhz6k7nhc"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-a/SFy+BPx0yGXL2TwqaIzv5k0/Y7YlcD/gGe7nooOqE="
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/MetodosNumericos.wasm"
+        }
+      ]
+    },
+    {
+      "Route": "_framework/MetodosNumericos.xxhz6k7nhc.wasm",
+      "AssetFile": "_framework/MetodosNumericos.xxhz6k7nhc.wasm.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000067267590"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14865"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"t47KoKPpkPG0HIOMX23nKZk3JXh40kbsM3EgH5Gifq8=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"a/SFy+BPx0yGXL2TwqaIzv5k0/Y7YlcD/gGe7nooOqE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 03 Mar 2025 01:46:15 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xxhz6k7nhc"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-a/SFy+BPx0yGXL2TwqaIzv5k0/Y7YlcD/gGe7nooOqE="
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/MetodosNumericos.wasm"
+        }
+      ]
+    },
+    {
+      "Route": "_framework/MetodosNumericos.xxhz6k7nhc.wasm.gz",
+      "AssetFile": "_framework/MetodosNumericos.xxhz6k7nhc.wasm.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14865"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"t47KoKPpkPG0HIOMX23nKZk3JXh40kbsM3EgH5Gifq8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 03 Mar 2025 01:46:15 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xxhz6k7nhc"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-t47KoKPpkPG0HIOMX23nKZk3JXh40kbsM3EgH5Gifq8="
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/MetodosNumericos.wasm.gz"
         }
       ]
     },
@@ -58681,17 +58681,17 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"8HlIk1hG02bMsk/Gr9DpNWjpmk3RuP7ykmt6l2txPDE=\""
+          "Value": "\"lLB1XFi/MSsIxkUQiG50NgUYXBAbIkVzPr1v6mqrUMU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 02 Mar 2025 12:45:52 GMT"
+          "Value": "Mon, 03 Mar 2025 01:46:15 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-8HlIk1hG02bMsk/Gr9DpNWjpmk3RuP7ykmt6l2txPDE="
+          "Value": "sha256-lLB1XFi/MSsIxkUQiG50NgUYXBAbIkVzPr1v6mqrUMU="
         }
       ]
     },
@@ -58702,7 +58702,7 @@
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000079630514"
+          "Quality": "0.000079617834"
         }
       ],
       "ResponseHeaders": [
@@ -58720,7 +58720,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12557"
+          "Value": "12559"
         },
         {
           "Name": "Content-Type",
@@ -58728,15 +58728,15 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"RQLQTsi53Y4EoZ9zv9WIcf7vrfsbTVZLm3CHnSP5SyI=\""
+          "Value": "\"UEyn4rQ3v8na2WFKm7jtAUoUih5oo17Yo6CMIrJJluw=\""
         },
         {
           "Name": "ETag",
-          "Value": "W/\"8HlIk1hG02bMsk/Gr9DpNWjpmk3RuP7ykmt6l2txPDE=\""
+          "Value": "W/\"lLB1XFi/MSsIxkUQiG50NgUYXBAbIkVzPr1v6mqrUMU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 02 Mar 2025 12:43:06 GMT"
+          "Value": "Mon, 03 Mar 2025 01:42:15 GMT"
         },
         {
           "Name": "Vary",
@@ -58746,7 +58746,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-8HlIk1hG02bMsk/Gr9DpNWjpmk3RuP7ykmt6l2txPDE="
+          "Value": "sha256-lLB1XFi/MSsIxkUQiG50NgUYXBAbIkVzPr1v6mqrUMU="
         }
       ]
     },
@@ -58769,7 +58769,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12557"
+          "Value": "12559"
         },
         {
           "Name": "Content-Type",
@@ -58777,11 +58777,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"RQLQTsi53Y4EoZ9zv9WIcf7vrfsbTVZLm3CHnSP5SyI=\""
+          "Value": "\"UEyn4rQ3v8na2WFKm7jtAUoUih5oo17Yo6CMIrJJluw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 02 Mar 2025 12:43:06 GMT"
+          "Value": "Mon, 03 Mar 2025 01:42:15 GMT"
         },
         {
           "Name": "Vary",
@@ -58791,7 +58791,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-RQLQTsi53Y4EoZ9zv9WIcf7vrfsbTVZLm3CHnSP5SyI="
+          "Value": "sha256-UEyn4rQ3v8na2WFKm7jtAUoUih5oo17Yo6CMIrJJluw="
         }
       ]
     },

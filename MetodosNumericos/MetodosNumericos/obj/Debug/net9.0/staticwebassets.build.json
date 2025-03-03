@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "WjRBtZ0Li0ta/WqCQNGi1PwxDwlcTGq3B1FCleVPFeY=",
+  "Hash": "jHyJN+14AF4gkRs0lfTdpLPXL2YQRaGFUAF8IuUOi6w=",
   "Source": "MetodosNumericos",
   "BasePath": "/",
   "Mode": "Root",
@@ -94,8 +94,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "manifest",
-      "Fingerprint": "c5t2y14l4q",
-      "Integrity": "8HlIk1hG02bMsk/Gr9DpNWjpmk3RuP7ykmt6l2txPDE=",
+      "Fingerprint": "ca209741ye",
+      "Integrity": "lLB1XFi/MSsIxkUQiG50NgUYXBAbIkVzPr1v6mqrUMU=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net9.0\\blazor.boot.json"
@@ -367,8 +367,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "symbol",
-      "Fingerprint": "ame85bw82k",
-      "Integrity": "Ai1xawINmO8JG2tDfOsszNP5gCFCpo6Jy1QvXn8Ytz4=",
+      "Fingerprint": "7427z1nm85",
+      "Integrity": "iWJPw2+EYvaPkxtJOT0BW3Ipm8fGGE3T19ZzViGbNhY=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net9.0\\MetodosNumericos.pdb"
@@ -388,8 +388,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "runtime",
-      "Fingerprint": "3kl6kw5rs2",
-      "Integrity": "o9Z5a0ekDYRE7G4mijwdHgyure14S6CMLiK2Pmm9vD4=",
+      "Fingerprint": "xxhz6k7nhc",
+      "Integrity": "a/SFy+BPx0yGXL2TwqaIzv5k0/Y7YlcD/gGe7nooOqE=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\obj\\Debug\\net9.0\\webcil\\MetodosNumericos.wasm"
@@ -5918,12 +5918,12 @@
       "OriginalItemSpec": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.Runtime.wasm"
     },
     {
-      "Identity": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\obj\\Debug\\net9.0\\compressed\\9rrj67o35n-3kl6kw5rs2.gz",
+      "Identity": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\obj\\Debug\\net9.0\\compressed\\9rrj67o35n-xxhz6k7nhc.gz",
       "SourceId": "MetodosNumericos",
       "SourceType": "Computed",
       "ContentRoot": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/MetodosNumericos#[.{fingerprint=3kl6kw5rs2}]!.wasm.gz",
+      "RelativePath": "_framework/MetodosNumericos#[.{fingerprint=xxhz6k7nhc}]!.wasm.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -5932,8 +5932,8 @@
       "RelatedAsset": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\bin\\Debug\\net9.0\\wwwroot\\_framework\\MetodosNumericos.wasm",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "hbwxkzy2k3",
-      "Integrity": "3cHJ16wger5aDblOejvusI4Jma6ilbpLwXcZ98RACoE=",
+      "Fingerprint": "94j6fb5w4p",
+      "Integrity": "t47KoKPpkPG0HIOMX23nKZk3JXh40kbsM3EgH5Gifq8=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\bin\\Debug\\net9.0\\wwwroot\\_framework\\MetodosNumericos.wasm"
@@ -6443,7 +6443,7 @@
       "OriginalItemSpec": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.Threading.wasm"
     },
     {
-      "Identity": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\obj\\Debug\\net9.0\\compressed\\c96m182w97-c5t2y14l4q.gz",
+      "Identity": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\obj\\Debug\\net9.0\\compressed\\c96m182w97-ca209741ye.gz",
       "SourceId": "MetodosNumericos",
       "SourceType": "Computed",
       "ContentRoot": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\obj\\Debug\\net9.0\\compressed\\",
@@ -6457,8 +6457,8 @@
       "RelatedAsset": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\bin\\Debug\\net9.0\\wwwroot\\_framework\\blazor.boot.json",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "50k0h3k7r8",
-      "Integrity": "RQLQTsi53Y4EoZ9zv9WIcf7vrfsbTVZLm3CHnSP5SyI=",
+      "Fingerprint": "wca5k3n41o",
+      "Integrity": "UEyn4rQ3v8na2WFKm7jtAUoUih5oo17Yo6CMIrJJluw=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\bin\\Debug\\net9.0\\wwwroot\\_framework\\blazor.boot.json"
@@ -8585,12 +8585,12 @@
       "OriginalItemSpec": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.Runtime.Loader.wasm"
     },
     {
-      "Identity": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\obj\\Debug\\net9.0\\compressed\\rzzjpwt6d5-ame85bw82k.gz",
+      "Identity": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\obj\\Debug\\net9.0\\compressed\\rzzjpwt6d5-7427z1nm85.gz",
       "SourceId": "MetodosNumericos",
       "SourceType": "Computed",
       "ContentRoot": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/MetodosNumericos#[.{fingerprint=ame85bw82k}]!.pdb.gz",
+      "RelativePath": "_framework/MetodosNumericos#[.{fingerprint=7427z1nm85}]!.pdb.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -8599,8 +8599,8 @@
       "RelatedAsset": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\bin\\Debug\\net9.0\\wwwroot\\_framework\\MetodosNumericos.pdb",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "u8lfx9soc5",
-      "Integrity": "Tl7EU5PFxN1gHHxdxWMHScbn7PUd39cWJhZwGCgnIyg=",
+      "Fingerprint": "cxrtoug4at",
+      "Integrity": "oIJzoUE+uPQZVk0O1SYjirrHtCWgP6ZanV3P/FSGs8M=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\bin\\Debug\\net9.0\\wwwroot\\_framework\\MetodosNumericos.pdb"
@@ -11839,11 +11839,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"8HlIk1hG02bMsk/Gr9DpNWjpmk3RuP7ykmt6l2txPDE=\""
+          "Value": "\"lLB1XFi/MSsIxkUQiG50NgUYXBAbIkVzPr1v6mqrUMU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 02 Mar 2025 12:45:52 GMT"
+          "Value": "Mon, 03 Mar 2025 01:46:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11853,18 +11853,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-8HlIk1hG02bMsk/Gr9DpNWjpmk3RuP7ykmt6l2txPDE="
+          "Value": "sha256-lLB1XFi/MSsIxkUQiG50NgUYXBAbIkVzPr1v6mqrUMU="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json",
-      "AssetFile": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\obj\\Debug\\net9.0\\compressed\\c96m182w97-c5t2y14l4q.gz",
+      "AssetFile": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\obj\\Debug\\net9.0\\compressed\\c96m182w97-ca209741ye.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000079630514"
+          "Quality": "0.000079617834"
         }
       ],
       "ResponseHeaders": [
@@ -11874,15 +11874,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12557"
+          "Value": "12559"
         },
         {
           "Name": "ETag",
-          "Value": "\"RQLQTsi53Y4EoZ9zv9WIcf7vrfsbTVZLm3CHnSP5SyI=\""
+          "Value": "\"UEyn4rQ3v8na2WFKm7jtAUoUih5oo17Yo6CMIrJJluw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 02 Mar 2025 12:43:06 GMT"
+          "Value": "Mon, 03 Mar 2025 01:42:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11902,19 +11902,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"8HlIk1hG02bMsk/Gr9DpNWjpmk3RuP7ykmt6l2txPDE=\""
+          "Value": "W/\"lLB1XFi/MSsIxkUQiG50NgUYXBAbIkVzPr1v6mqrUMU=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-8HlIk1hG02bMsk/Gr9DpNWjpmk3RuP7ykmt6l2txPDE="
+          "Value": "sha256-lLB1XFi/MSsIxkUQiG50NgUYXBAbIkVzPr1v6mqrUMU="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json.gz",
-      "AssetFile": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\obj\\Debug\\net9.0\\compressed\\c96m182w97-c5t2y14l4q.gz",
+      "AssetFile": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\obj\\Debug\\net9.0\\compressed\\c96m182w97-ca209741ye.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -11923,7 +11923,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12557"
+          "Value": "12559"
         },
         {
           "Name": "Content-Type",
@@ -11931,11 +11931,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"RQLQTsi53Y4EoZ9zv9WIcf7vrfsbTVZLm3CHnSP5SyI=\""
+          "Value": "\"UEyn4rQ3v8na2WFKm7jtAUoUih5oo17Yo6CMIrJJluw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 02 Mar 2025 12:43:06 GMT"
+          "Value": "Mon, 03 Mar 2025 01:42:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11953,7 +11953,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-RQLQTsi53Y4EoZ9zv9WIcf7vrfsbTVZLm3CHnSP5SyI="
+          "Value": "sha256-UEyn4rQ3v8na2WFKm7jtAUoUih5oo17Yo6CMIrJJluw="
         }
       ]
     },
@@ -15373,168 +15373,7 @@
       ]
     },
     {
-      "Route": "_framework/MetodosNumericos.3kl6kw5rs2.wasm",
-      "AssetFile": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\bin\\Debug\\net9.0\\wwwroot\\_framework\\MetodosNumericos.wasm",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "42261"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/wasm"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"o9Z5a0ekDYRE7G4mijwdHgyure14S6CMLiK2Pmm9vD4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 02 Mar 2025 12:45:51 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "3kl6kw5rs2"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/MetodosNumericos.wasm"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-o9Z5a0ekDYRE7G4mijwdHgyure14S6CMLiK2Pmm9vD4="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/MetodosNumericos.3kl6kw5rs2.wasm",
-      "AssetFile": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\obj\\Debug\\net9.0\\compressed\\9rrj67o35n-3kl6kw5rs2.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000068446270"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "14609"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"3cHJ16wger5aDblOejvusI4Jma6ilbpLwXcZ98RACoE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 02 Mar 2025 12:45:52 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/wasm"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"o9Z5a0ekDYRE7G4mijwdHgyure14S6CMLiK2Pmm9vD4=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "3kl6kw5rs2"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/MetodosNumericos.wasm"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-o9Z5a0ekDYRE7G4mijwdHgyure14S6CMLiK2Pmm9vD4="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/MetodosNumericos.3kl6kw5rs2.wasm.gz",
-      "AssetFile": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\obj\\Debug\\net9.0\\compressed\\9rrj67o35n-3kl6kw5rs2.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "14609"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/wasm"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"3cHJ16wger5aDblOejvusI4Jma6ilbpLwXcZ98RACoE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 02 Mar 2025 12:45:52 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "3kl6kw5rs2"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/MetodosNumericos.wasm.gz"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-3cHJ16wger5aDblOejvusI4Jma6ilbpLwXcZ98RACoE="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/MetodosNumericos.ame85bw82k.pdb",
+      "Route": "_framework/MetodosNumericos.7427z1nm85.pdb",
       "AssetFile": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\bin\\Debug\\net9.0\\wwwroot\\_framework\\MetodosNumericos.pdb",
       "Selectors": [],
       "ResponseHeaders": [
@@ -15544,7 +15383,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "32428"
+          "Value": "32496"
         },
         {
           "Name": "Content-Type",
@@ -15552,11 +15391,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Ai1xawINmO8JG2tDfOsszNP5gCFCpo6Jy1QvXn8Ytz4=\""
+          "Value": "\"iWJPw2+EYvaPkxtJOT0BW3Ipm8fGGE3T19ZzViGbNhY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 02 Mar 2025 12:45:51 GMT"
+          "Value": "Mon, 03 Mar 2025 01:46:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15566,7 +15405,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "ame85bw82k"
+          "Value": "7427z1nm85"
         },
         {
           "Name": "label",
@@ -15574,18 +15413,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Ai1xawINmO8JG2tDfOsszNP5gCFCpo6Jy1QvXn8Ytz4="
+          "Value": "sha256-iWJPw2+EYvaPkxtJOT0BW3Ipm8fGGE3T19ZzViGbNhY="
         }
       ]
     },
     {
-      "Route": "_framework/MetodosNumericos.ame85bw82k.pdb",
-      "AssetFile": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\obj\\Debug\\net9.0\\compressed\\rzzjpwt6d5-ame85bw82k.gz",
+      "Route": "_framework/MetodosNumericos.7427z1nm85.pdb",
+      "AssetFile": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\obj\\Debug\\net9.0\\compressed\\rzzjpwt6d5-7427z1nm85.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000040783034"
+          "Quality": "0.000040706668"
         }
       ],
       "ResponseHeaders": [
@@ -15595,15 +15434,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "24519"
+          "Value": "24565"
         },
         {
           "Name": "ETag",
-          "Value": "\"Tl7EU5PFxN1gHHxdxWMHScbn7PUd39cWJhZwGCgnIyg=\""
+          "Value": "\"oIJzoUE+uPQZVk0O1SYjirrHtCWgP6ZanV3P/FSGs8M=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 02 Mar 2025 12:45:52 GMT"
+          "Value": "Mon, 03 Mar 2025 01:46:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15623,13 +15462,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"Ai1xawINmO8JG2tDfOsszNP5gCFCpo6Jy1QvXn8Ytz4=\""
+          "Value": "W/\"iWJPw2+EYvaPkxtJOT0BW3Ipm8fGGE3T19ZzViGbNhY=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "ame85bw82k"
+          "Value": "7427z1nm85"
         },
         {
           "Name": "label",
@@ -15637,13 +15476,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Ai1xawINmO8JG2tDfOsszNP5gCFCpo6Jy1QvXn8Ytz4="
+          "Value": "sha256-iWJPw2+EYvaPkxtJOT0BW3Ipm8fGGE3T19ZzViGbNhY="
         }
       ]
     },
     {
-      "Route": "_framework/MetodosNumericos.ame85bw82k.pdb.gz",
-      "AssetFile": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\obj\\Debug\\net9.0\\compressed\\rzzjpwt6d5-ame85bw82k.gz",
+      "Route": "_framework/MetodosNumericos.7427z1nm85.pdb.gz",
+      "AssetFile": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\obj\\Debug\\net9.0\\compressed\\rzzjpwt6d5-7427z1nm85.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -15652,7 +15491,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "24519"
+          "Value": "24565"
         },
         {
           "Name": "Content-Type",
@@ -15660,11 +15499,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Tl7EU5PFxN1gHHxdxWMHScbn7PUd39cWJhZwGCgnIyg=\""
+          "Value": "\"oIJzoUE+uPQZVk0O1SYjirrHtCWgP6ZanV3P/FSGs8M=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 02 Mar 2025 12:45:52 GMT"
+          "Value": "Mon, 03 Mar 2025 01:46:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15682,7 +15521,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "ame85bw82k"
+          "Value": "7427z1nm85"
         },
         {
           "Name": "label",
@@ -15690,7 +15529,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Tl7EU5PFxN1gHHxdxWMHScbn7PUd39cWJhZwGCgnIyg="
+          "Value": "sha256-oIJzoUE+uPQZVk0O1SYjirrHtCWgP6ZanV3P/FSGs8M="
         }
       ]
     },
@@ -15705,7 +15544,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "32428"
+          "Value": "32496"
         },
         {
           "Name": "Content-Type",
@@ -15713,11 +15552,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Ai1xawINmO8JG2tDfOsszNP5gCFCpo6Jy1QvXn8Ytz4=\""
+          "Value": "\"iWJPw2+EYvaPkxtJOT0BW3Ipm8fGGE3T19ZzViGbNhY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 02 Mar 2025 12:45:51 GMT"
+          "Value": "Mon, 03 Mar 2025 01:46:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15727,18 +15566,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Ai1xawINmO8JG2tDfOsszNP5gCFCpo6Jy1QvXn8Ytz4="
+          "Value": "sha256-iWJPw2+EYvaPkxtJOT0BW3Ipm8fGGE3T19ZzViGbNhY="
         }
       ]
     },
     {
       "Route": "_framework/MetodosNumericos.pdb",
-      "AssetFile": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\obj\\Debug\\net9.0\\compressed\\rzzjpwt6d5-ame85bw82k.gz",
+      "AssetFile": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\obj\\Debug\\net9.0\\compressed\\rzzjpwt6d5-7427z1nm85.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000040783034"
+          "Quality": "0.000040706668"
         }
       ],
       "ResponseHeaders": [
@@ -15748,15 +15587,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "24519"
+          "Value": "24565"
         },
         {
           "Name": "ETag",
-          "Value": "\"Tl7EU5PFxN1gHHxdxWMHScbn7PUd39cWJhZwGCgnIyg=\""
+          "Value": "\"oIJzoUE+uPQZVk0O1SYjirrHtCWgP6ZanV3P/FSGs8M=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 02 Mar 2025 12:45:52 GMT"
+          "Value": "Mon, 03 Mar 2025 01:46:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15776,19 +15615,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"Ai1xawINmO8JG2tDfOsszNP5gCFCpo6Jy1QvXn8Ytz4=\""
+          "Value": "W/\"iWJPw2+EYvaPkxtJOT0BW3Ipm8fGGE3T19ZzViGbNhY=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Ai1xawINmO8JG2tDfOsszNP5gCFCpo6Jy1QvXn8Ytz4="
+          "Value": "sha256-iWJPw2+EYvaPkxtJOT0BW3Ipm8fGGE3T19ZzViGbNhY="
         }
       ]
     },
     {
       "Route": "_framework/MetodosNumericos.pdb.gz",
-      "AssetFile": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\obj\\Debug\\net9.0\\compressed\\rzzjpwt6d5-ame85bw82k.gz",
+      "AssetFile": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\obj\\Debug\\net9.0\\compressed\\rzzjpwt6d5-7427z1nm85.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -15797,7 +15636,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "24519"
+          "Value": "24565"
         },
         {
           "Name": "Content-Type",
@@ -15805,11 +15644,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Tl7EU5PFxN1gHHxdxWMHScbn7PUd39cWJhZwGCgnIyg=\""
+          "Value": "\"oIJzoUE+uPQZVk0O1SYjirrHtCWgP6ZanV3P/FSGs8M=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 02 Mar 2025 12:45:52 GMT"
+          "Value": "Mon, 03 Mar 2025 01:46:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15827,7 +15666,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Tl7EU5PFxN1gHHxdxWMHScbn7PUd39cWJhZwGCgnIyg="
+          "Value": "sha256-oIJzoUE+uPQZVk0O1SYjirrHtCWgP6ZanV3P/FSGs8M="
         }
       ]
     },
@@ -15842,7 +15681,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "42261"
+          "Value": "42773"
         },
         {
           "Name": "Content-Type",
@@ -15850,11 +15689,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"o9Z5a0ekDYRE7G4mijwdHgyure14S6CMLiK2Pmm9vD4=\""
+          "Value": "\"a/SFy+BPx0yGXL2TwqaIzv5k0/Y7YlcD/gGe7nooOqE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 02 Mar 2025 12:45:51 GMT"
+          "Value": "Mon, 03 Mar 2025 01:46:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15864,18 +15703,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-o9Z5a0ekDYRE7G4mijwdHgyure14S6CMLiK2Pmm9vD4="
+          "Value": "sha256-a/SFy+BPx0yGXL2TwqaIzv5k0/Y7YlcD/gGe7nooOqE="
         }
       ]
     },
     {
       "Route": "_framework/MetodosNumericos.wasm",
-      "AssetFile": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\obj\\Debug\\net9.0\\compressed\\9rrj67o35n-3kl6kw5rs2.gz",
+      "AssetFile": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\obj\\Debug\\net9.0\\compressed\\9rrj67o35n-xxhz6k7nhc.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000068446270"
+          "Quality": "0.000067267590"
         }
       ],
       "ResponseHeaders": [
@@ -15885,15 +15724,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "14609"
+          "Value": "14865"
         },
         {
           "Name": "ETag",
-          "Value": "\"3cHJ16wger5aDblOejvusI4Jma6ilbpLwXcZ98RACoE=\""
+          "Value": "\"t47KoKPpkPG0HIOMX23nKZk3JXh40kbsM3EgH5Gifq8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 02 Mar 2025 12:45:52 GMT"
+          "Value": "Mon, 03 Mar 2025 01:46:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15913,19 +15752,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"o9Z5a0ekDYRE7G4mijwdHgyure14S6CMLiK2Pmm9vD4=\""
+          "Value": "W/\"a/SFy+BPx0yGXL2TwqaIzv5k0/Y7YlcD/gGe7nooOqE=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-o9Z5a0ekDYRE7G4mijwdHgyure14S6CMLiK2Pmm9vD4="
+          "Value": "sha256-a/SFy+BPx0yGXL2TwqaIzv5k0/Y7YlcD/gGe7nooOqE="
         }
       ]
     },
     {
       "Route": "_framework/MetodosNumericos.wasm.gz",
-      "AssetFile": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\obj\\Debug\\net9.0\\compressed\\9rrj67o35n-3kl6kw5rs2.gz",
+      "AssetFile": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\obj\\Debug\\net9.0\\compressed\\9rrj67o35n-xxhz6k7nhc.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -15934,7 +15773,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "14609"
+          "Value": "14865"
         },
         {
           "Name": "Content-Type",
@@ -15942,11 +15781,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"3cHJ16wger5aDblOejvusI4Jma6ilbpLwXcZ98RACoE=\""
+          "Value": "\"t47KoKPpkPG0HIOMX23nKZk3JXh40kbsM3EgH5Gifq8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 02 Mar 2025 12:45:52 GMT"
+          "Value": "Mon, 03 Mar 2025 01:46:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15964,7 +15803,168 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-3cHJ16wger5aDblOejvusI4Jma6ilbpLwXcZ98RACoE="
+          "Value": "sha256-t47KoKPpkPG0HIOMX23nKZk3JXh40kbsM3EgH5Gifq8="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/MetodosNumericos.xxhz6k7nhc.wasm",
+      "AssetFile": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\bin\\Debug\\net9.0\\wwwroot\\_framework\\MetodosNumericos.wasm",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "42773"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"a/SFy+BPx0yGXL2TwqaIzv5k0/Y7YlcD/gGe7nooOqE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 03 Mar 2025 01:46:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xxhz6k7nhc"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/MetodosNumericos.wasm"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-a/SFy+BPx0yGXL2TwqaIzv5k0/Y7YlcD/gGe7nooOqE="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/MetodosNumericos.xxhz6k7nhc.wasm",
+      "AssetFile": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\obj\\Debug\\net9.0\\compressed\\9rrj67o35n-xxhz6k7nhc.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000067267590"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14865"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"t47KoKPpkPG0HIOMX23nKZk3JXh40kbsM3EgH5Gifq8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 03 Mar 2025 01:46:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"a/SFy+BPx0yGXL2TwqaIzv5k0/Y7YlcD/gGe7nooOqE=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xxhz6k7nhc"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/MetodosNumericos.wasm"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-a/SFy+BPx0yGXL2TwqaIzv5k0/Y7YlcD/gGe7nooOqE="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/MetodosNumericos.xxhz6k7nhc.wasm.gz",
+      "AssetFile": "D:\\GIT\\MN\\MetodosNumericos\\MetodosNumericos\\MetodosNumericos\\obj\\Debug\\net9.0\\compressed\\9rrj67o35n-xxhz6k7nhc.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14865"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"t47KoKPpkPG0HIOMX23nKZk3JXh40kbsM3EgH5Gifq8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 03 Mar 2025 01:46:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xxhz6k7nhc"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/MetodosNumericos.wasm.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-t47KoKPpkPG0HIOMX23nKZk3JXh40kbsM3EgH5Gifq8="
         }
       ]
     },

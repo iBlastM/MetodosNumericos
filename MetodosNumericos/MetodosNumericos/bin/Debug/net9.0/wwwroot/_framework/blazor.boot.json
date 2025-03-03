@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "MetodosNumericos",
   "resources": {
-    "hash": "sha256-wETT3+YVv+e0kc/k0VSYwlwB3Ppi9fAPqTkGcxRzFQM=",
+    "hash": "sha256-uFl5V5uo5H43W5iEACJ2yTNPwhGqcXpwCJcXs4v3UAs=",
     "fingerprinting": {
       "Microsoft.AspNetCore.Authorization.qe23mgxr71.wasm": "Microsoft.AspNetCore.Authorization.wasm",
       "Microsoft.AspNetCore.Components.flveird317.wasm": "Microsoft.AspNetCore.Components.wasm",
@@ -204,8 +204,8 @@
       "icudt_no_CJK.lfu7j35m59.dat": "icudt_no_CJK.dat",
       "MetodosInterpolacion.ycqfnjnags.wasm": "MetodosInterpolacion.wasm",
       "MetodosInterpolacion.3oe8etjowh.pdb": "MetodosInterpolacion.pdb",
-      "MetodosNumericos.3kl6kw5rs2.wasm": "MetodosNumericos.wasm",
-      "MetodosNumericos.ame85bw82k.pdb": "MetodosNumericos.pdb"
+      "MetodosNumericos.xxhz6k7nhc.wasm": "MetodosNumericos.wasm",
+      "MetodosNumericos.7427z1nm85.pdb": "MetodosNumericos.pdb"
     },
     "jsModuleNative": {
       "dotnet.native.hmanx9razn.js": "sha256-d7UNSArplVrX3arY2Kmhxp1wN79ng8hLqIBrkiQ9Gbo="
@@ -417,11 +417,11 @@
       "mscorlib.o0184ey5ia.wasm": "sha256-2GxNKZQJVJvYMUxSTuXa5V2qxawSMMHZtwG33SKVCZU=",
       "netstandard.hb3h2rr8mk.wasm": "sha256-DWn9+RH/ElZQ6imlYqVwZvir1KTzNwY18AzGmnyiymU=",
       "MetodosInterpolacion.ycqfnjnags.wasm": "sha256-zjnkgev3u8fMHtYOEhCMLt3LUpNbH8O7+lzQec95eoo=",
-      "MetodosNumericos.3kl6kw5rs2.wasm": "sha256-o9Z5a0ekDYRE7G4mijwdHgyure14S6CMLiK2Pmm9vD4="
+      "MetodosNumericos.xxhz6k7nhc.wasm": "sha256-a/SFy+BPx0yGXL2TwqaIzv5k0/Y7YlcD/gGe7nooOqE="
     },
     "pdb": {
       "MetodosInterpolacion.3oe8etjowh.pdb": "sha256-vXHmhFJkN7OLZH8H3M109ZS53oqm1kIlmHEYh8XiX34=",
-      "MetodosNumericos.ame85bw82k.pdb": "sha256-Ai1xawINmO8JG2tDfOsszNP5gCFCpo6Jy1QvXn8Ytz4="
+      "MetodosNumericos.7427z1nm85.pdb": "sha256-iWJPw2+EYvaPkxtJOT0BW3Ipm8fGGE3T19ZzViGbNhY="
     }
   },
   "cacheBootResources": true,

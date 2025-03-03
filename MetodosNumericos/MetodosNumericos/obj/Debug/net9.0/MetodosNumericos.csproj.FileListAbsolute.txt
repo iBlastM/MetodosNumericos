@@ -1102,10 +1102,10 @@ D:\GIT\MN\MetodosNumericos\MetodosNumericos\MetodosNumericos\bin\Debug\net9.0\ww
 D:\GIT\MN\MetodosNumericos\MetodosNumericos\MetodosNumericos\bin\Debug\net9.0\wwwroot\_framework\MetodosInterpolacion.3oe8etjowh.pdb.gz
 D:\GIT\MN\MetodosNumericos\MetodosNumericos\MetodosNumericos\obj\Debug\net9.0\compressed\66eujsy7zq-ycqfnjnags.gz
 D:\GIT\MN\MetodosNumericos\MetodosNumericos\MetodosNumericos\obj\Debug\net9.0\compressed\mv14y4tpzo-3oe8etjowh.gz
-D:\GIT\MN\MetodosNumericos\MetodosNumericos\MetodosNumericos\bin\Debug\net9.0\wwwroot\_framework\MetodosNumericos.ame85bw82k.pdb
-D:\GIT\MN\MetodosNumericos\MetodosNumericos\MetodosNumericos\bin\Debug\net9.0\wwwroot\_framework\MetodosNumericos.3kl6kw5rs2.wasm
-D:\GIT\MN\MetodosNumericos\MetodosNumericos\MetodosNumericos\bin\Debug\net9.0\wwwroot\_framework\MetodosNumericos.3kl6kw5rs2.wasm.gz
-D:\GIT\MN\MetodosNumericos\MetodosNumericos\MetodosNumericos\bin\Debug\net9.0\wwwroot\_framework\MetodosNumericos.ame85bw82k.pdb.gz
-D:\GIT\MN\MetodosNumericos\MetodosNumericos\MetodosNumericos\obj\Debug\net9.0\compressed\9rrj67o35n-3kl6kw5rs2.gz
-D:\GIT\MN\MetodosNumericos\MetodosNumericos\MetodosNumericos\obj\Debug\net9.0\compressed\rzzjpwt6d5-ame85bw82k.gz
-D:\GIT\MN\MetodosNumericos\MetodosNumericos\MetodosNumericos\obj\Debug\net9.0\compressed\c96m182w97-c5t2y14l4q.gz
+D:\GIT\MN\MetodosNumericos\MetodosNumericos\MetodosNumericos\bin\Debug\net9.0\wwwroot\_framework\MetodosNumericos.7427z1nm85.pdb
+D:\GIT\MN\MetodosNumericos\MetodosNumericos\MetodosNumericos\bin\Debug\net9.0\wwwroot\_framework\MetodosNumericos.xxhz6k7nhc.wasm
+D:\GIT\MN\MetodosNumericos\MetodosNumericos\MetodosNumericos\bin\Debug\net9.0\wwwroot\_framework\MetodosNumericos.xxhz6k7nhc.wasm.gz
+D:\GIT\MN\MetodosNumericos\MetodosNumericos\MetodosNumericos\bin\Debug\net9.0\wwwroot\_framework\MetodosNumericos.7427z1nm85.pdb.gz
+D:\GIT\MN\MetodosNumericos\MetodosNumericos\MetodosNumericos\obj\Debug\net9.0\compressed\9rrj67o35n-xxhz6k7nhc.gz
+D:\GIT\MN\MetodosNumericos\MetodosNumericos\MetodosNumericos\obj\Debug\net9.0\compressed\rzzjpwt6d5-7427z1nm85.gz
+D:\GIT\MN\MetodosNumericos\MetodosNumericos\MetodosNumericos\obj\Debug\net9.0\compressed\c96m182w97-ca209741ye.gz

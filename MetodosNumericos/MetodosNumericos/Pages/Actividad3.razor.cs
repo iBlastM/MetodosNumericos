@@ -61,7 +61,7 @@ public partial class Actividad3
     {
         puntos.Remove(punto);
     }
-    private void CalcularInterpolacion()
+    private async Task CalcularInterpolacion()
     {
         if (gradoInterpolacion > puntosSeleccionados.Count - 1 || gradoInterpolacion < 0)
         {
@@ -92,6 +92,8 @@ public partial class Actividad3
                 resultadoInterpolacion = MetodoNeville();
                 break;
         }
+
+       // await chart.React();
     }
 
     private double InterpolacionLagrange()
@@ -116,11 +118,11 @@ public partial class Actividad3
     {
         new Scatter
         {
-            Name = polinomioInterpolacion,
+            Name = "Polinomio",
             Mode = Plotly.Blazor.Traces.ScatterLib.ModeFlag.Lines,
             X = x,
             Y = y,
-            Text = polinomioInterpolacion, // Etiquetas,
+            Text = "Polinomio", // Etiquetas,
             TextPosition = (Plotly.Blazor.Traces.ScatterLib.TextPositionEnum?)TextPositionEnum.MiddleLeft
         },
         new Scatter
@@ -134,7 +136,7 @@ public partial class Actividad3
         }
 
     };
-
+       
 
         return resultado; // Retorna el valor calculado
     }
