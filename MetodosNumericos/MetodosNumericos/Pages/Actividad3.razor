@@ -168,6 +168,8 @@
 
 @if (mostrarGrafica)
 {
-    
+    <div class="d-flex justify-content-center mt-3">
+        <button class="btn btn-success" @onclick="ActualizarGrafica">Actualizar Grafica</button>
+    </div>
     <PlotlyChart @bind-Config="config" @bind-Layout="layout" @bind-Data="data" @ref="chart" />
 }

@@ -1,7 +1,8 @@
 ﻿using MetodosInterpolacion;
 using MetodosInterpolacion.Metodos;
+using NCalc;
 
-
+/* 
 List<Punto> puntosSeleccionados = new();
 puntosSeleccionados.Add(new Punto { X = 1, FX = 0.7651977 });
 puntosSeleccionados.Add(new Punto { X = 1.3, FX = 0.6200860 });
@@ -33,3 +34,10 @@ static void ImprimirMatriz(double[,] matriz)
     Console.WriteLine("hola"); // Salto de línea al final de la matriz
 
 }
+
+/* */
+
+Expression variable = new Expression("(x*x)*(2)");
+variable.Parameters["x"] = 2;
+
+Console.WriteLine(variable.Evaluate());

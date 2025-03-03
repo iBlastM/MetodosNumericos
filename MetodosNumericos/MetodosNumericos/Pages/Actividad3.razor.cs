@@ -61,7 +61,12 @@ public partial class Actividad3
     {
         puntos.Remove(punto);
     }
-    private async Task CalcularInterpolacion()
+
+    private void ActualizarGrafica()
+    {
+        chart.React();
+    }
+    private void CalcularInterpolacion()
     {
         if (gradoInterpolacion > puntosSeleccionados.Count - 1 || gradoInterpolacion < 0)
         {
@@ -85,7 +90,9 @@ public partial class Actividad3
                 resultadoInterpolacion = InterpolacionLagrange();
                 break;
             case "DiferenciasDivididas":
+                mostrarGrafica = false;
                 resultadoInterpolacion = DiferenciasDivididas();
+                ActualizarGrafica();
                 mostrarGrafica = true;
                 break;
             case "Neville":
@@ -93,7 +100,6 @@ public partial class Actividad3
                 break;
         }
 
-       // await chart.React();
     }
 
     private double InterpolacionLagrange()
@@ -137,7 +143,7 @@ public partial class Actividad3
 
     };
        
-
+        chart.Update(data, layout);
         return resultado; // Retorna el valor calculado
     }
 
