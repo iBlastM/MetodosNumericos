@@ -34,11 +34,13 @@
         <table class="table table-striped table-bordered table-custom">
             <thead>
                 <tr>
-                    <th class="col-seleccionar">Seleccionar</th>
-                    <th>X</th>
-                    <th>F(X)</th>
-                    <th class="col-seleccionar">Acciones</th>
-                </tr>
+                <th class="col-seleccionar">
+                        <InputCheckbox @bind-Value="SeleccionarTodos" />
+                </th>
+                <th>X</th>
+                <th>F(X)</th>
+                <th class="col-seleccionar">Acciones</th>
+            </tr>
             </thead>
             <tbody>
                 @foreach (var punto in puntos)
@@ -117,47 +119,48 @@
             @switch (metodoSeleccionado)
             {
                 case "Lagrange":
-                    resultadoInterpolacion = InterpolacionLagrange();
                     break;
                 case "DiferenciasDivididas":
-                    <h3 class="text-center mt-4">Tabla de Diferencias Divididas</h3>
-
-                    <div class="table-responsive">
-                        <table class="table table-striped table-bordered table-hover text-center shadow-sm">
-                            <thead class="table-dark">
-                                <tr>
-                                    <th>X</th>
-                                    <th>f(Xᵢ)</th>
-                                    @for (int j = 2; j < matrizTablaDiferenciasDivididas.GetLength(1); j++)
-                                    {
-                                        <th>Diferencias Divididas #@(j - 1)</th>
-                                    }
-                                </tr>
-                            </thead>
-                            <tbody>
-                                @for (int i = 0; i < matrizTablaDiferenciasDivididas.GetLength(0); i++) // Filas
-                                {
+                    @if(matrizTablaDiferenciasDivididas != null){
+                        <h3 class="text-center mt-4">Tabla de Diferencias Divididas</h3>
+                        <div class="table-responsive">
+                            <table class="table table-striped table-bordered table-hover text-center shadow-sm">
+                                <thead class="table-dark">
                                     <tr>
-                                        @for (int j = 0; j < matrizTablaDiferenciasDivididas.GetLength(1); j++) // Columnas
+                                        <th>X</th>
+                                        <th>f(Xᵢ)</th>
+                                        @for (int j = 2; j < matrizTablaDiferenciasDivididas.GetLength(1); j++)
                                         {
-                                            <td>
-                                                @(matrizTablaDiferenciasDivididas[i, j] == -0.321123321123321123
-                                                    ? ""
-                                                    : matrizTablaDiferenciasDivididas[i, j])
-                                            </td>
+                                            <th>Diferencias Divididas #@(j - 1)</th>
                                         }
                                     </tr>
-                                }
-                            </tbody>
-                        </table>
-                    </div>
+                                </thead>
+                                <tbody>
+                                    @for (int i = 0; i < matrizTablaDiferenciasDivididas.GetLength(0); i++) // Filas
+                                    {
+                                        <tr>
+                                            @for (int j = 0; j < matrizTablaDiferenciasDivididas.GetLength(1); j++) // Columnas
+                                            {
+                                                <td>
+                                                    @(matrizTablaDiferenciasDivididas[i, j] == -0.321123321123321123
+                                                        ? ""
+                                                        : matrizTablaDiferenciasDivididas[i, j])
+                                                </td>
+                                            }
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    }
+                    
                     break;
                 case "Neville":
                     resultadoInterpolacion = MetodoNeville();
                     break;
             }
             <p class="fs-4 fw-bold text-primary">
-                Polinomio en grado @gradoInterpolacion: @polinomioInterpolacion
+                Polinomio en grado @polinomioInterpolacion
             </p>
             <p class="fs-5 text-success fw-bold text-primary">
                 P(@xInterpolar) = @resultadoInterpolacion.Value ≈ F(@xInterpolar)
@@ -171,5 +174,7 @@
     <div class="d-flex justify-content-center mt-3">
         <button class="btn btn-success" @onclick="ActualizarGrafica">Actualizar Grafica</button>
     </div>
+    
     <PlotlyChart @bind-Config="config" @bind-Layout="layout" @bind-Data="data" @ref="chart" />
+    
 }

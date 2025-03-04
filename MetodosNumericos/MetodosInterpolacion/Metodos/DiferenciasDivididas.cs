@@ -27,7 +27,7 @@ public class DiferenciasDivididas(List<Punto> Puntos, int GradoInterpolacion, do
 
         double resultadoInterpolacion = CalcularPuntoInterpolado(xInterpolado);
 
-        polinomioInterpolacion = "P(x) = " + coeficientes[0].ToString();
+        polinomioInterpolacion = $"Polinomio en grado {GradoInterpolacion}: P(x) = " + coeficientes[0].ToString();
         GenerarCadenaPolinomio();
 
         puntosGraficar = GenerarPuntos(xInterpolado, CalcularPuntoInterpolado);

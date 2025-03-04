@@ -1,5 +1,6 @@
 using MetodosInterpolacion;
 using MetodosInterpolacion.Metodos;
+using Microsoft.AspNetCore.Components;
 using Plotly.Blazor;
 using Plotly.Blazor.Traces;
 using Plotly.Blazor.Traces.ScatterCarpetLib;
@@ -20,6 +21,20 @@ public partial class Actividad3
     private string mensajeErrorDatosVacios = string.Empty;
     private double[,] matrizTablaDiferenciasDivididas;
     private string polinomioInterpolacion;
+    private bool seleccionarTodos;
+
+    private bool SeleccionarTodos
+    {
+        get => seleccionarTodos;
+        set
+        {
+            seleccionarTodos = value;
+            foreach (var punto in puntos)
+            {
+                punto.Seleccionado = seleccionarTodos;
+            }
+        }
+    }
 
     private bool mostrarGrafica = false;
     PlotlyChart chart = new();
@@ -90,10 +105,8 @@ public partial class Actividad3
                 resultadoInterpolacion = InterpolacionLagrange();
                 break;
             case "DiferenciasDivididas":
-                mostrarGrafica = false;
                 resultadoInterpolacion = DiferenciasDivididas();
                 ActualizarGrafica();
-                mostrarGrafica = true;
                 break;
             case "Neville":
                 resultadoInterpolacion = MetodoNeville();
@@ -143,7 +156,7 @@ public partial class Actividad3
 
     private double DiferenciasDivididas()
     {
-        mostrarGrafica = false;
+        mostrarGrafica = true;
         DiferenciasDivididas diferenciasDivididas = new(puntosSeleccionados, gradoInterpolacion, xInterpolar);
         matrizTablaDiferenciasDivididas = diferenciasDivididas.tablaDiferenciasDivididas;
 

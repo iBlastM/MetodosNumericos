@@ -14,7 +14,7 @@ public class InterpolacionLagrange(List<Punto> Puntos, int gradoInterpolacion, d
     public List<Punto> puntosGraficar { get; private set; }
     public double CalcularInterpolacion()
     {
-        polinomioInterpolacion = $"{gradoInterpolacion} P(x) = ";
+        polinomioInterpolacion = $"Polinomio en grado {gradoInterpolacion}: P(x) = ";
         GenerarCadenaPolinomio();
         double resultadoInterpolacion = CalcularPuntoInterpolado(xInterpolado);
         puntosGraficar = GenerarPuntos(xInterpolado, CalcularPuntoInterpolado);
