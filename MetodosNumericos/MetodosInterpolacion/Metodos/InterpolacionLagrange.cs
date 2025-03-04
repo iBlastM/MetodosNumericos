@@ -17,6 +17,7 @@ public class InterpolacionLagrange(List<Punto> Puntos, int gradoInterpolacion, d
         polinomioInterpolacion = $"{gradoInterpolacion} P(x) = ";
         GenerarCadenaPolinomio();
         double resultadoInterpolacion = CalcularPuntoInterpolado(xInterpolado);
+        puntosGraficar = GenerarPuntos(xInterpolado, CalcularPuntoInterpolado);
         return resultadoInterpolacion;
     }
 
@@ -74,6 +75,42 @@ public class InterpolacionLagrange(List<Punto> Puntos, int gradoInterpolacion, d
            
         }
 
+    }
+
+    public List<Punto> GenerarPuntos(double xInicial, Func<double, double> calcularFX)
+    {
+        List<Punto> puntos = new List<Punto>();
+
+        // Generar 500 puntos a la izquierda
+        for (int i = 500; i > 0; i--)
+        {
+            double x = xInicial - (i * 0.1);
+            puntos.Add(new Punto
+            {
+                X = x,
+                FX = calcularFX(x) // Se calcula FX 
+            });
+        }
+
+        // Generar el punto base (X inicial)
+        puntos.Add(new Punto
+        {
+            X = xInicial,
+            FX = calcularFX(xInicial)
+        });
+
+        // Generar 500 puntos a la derecha
+        for (int i = 1; i <= 500; i++)
+        {
+            double x = xInicial + (i * 0.1);
+            puntos.Add(new Punto
+            {
+                X = x,
+                FX = calcularFX(x) // Se calcula FX con tu método
+            });
+        }
+
+        return puntos;
     }
 
 }

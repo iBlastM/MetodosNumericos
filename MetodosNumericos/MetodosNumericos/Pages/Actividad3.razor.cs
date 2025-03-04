@@ -104,11 +104,40 @@ public partial class Actividad3
 
     private double InterpolacionLagrange()
     {
+        mostrarGrafica = true;
         InterpolacionLagrange interpolacionLagrange = new(puntosSeleccionados, gradoInterpolacion, xInterpolar);
         
         double resultado = interpolacionLagrange.CalcularInterpolacion();
         polinomioInterpolacion = interpolacionLagrange.polinomioInterpolacion;
-       
+
+
+        var x = interpolacionLagrange.puntosGraficar.Select(p => (object)p.X).ToList();
+        var y = interpolacionLagrange.puntosGraficar.Select(p => (object)p.FX).ToList();
+        data = new List<ITrace>
+    {
+        new Scatter
+        {
+            Name = "Polinomio",
+            Mode = Plotly.Blazor.Traces.ScatterLib.ModeFlag.Lines,
+            X = x,
+            Y = y,
+            Text = "Polinomio", // Etiquetas,
+            TextPosition = (Plotly.Blazor.Traces.ScatterLib.TextPositionEnum?)TextPositionEnum.MiddleLeft
+        },
+        new Scatter
+        {
+            Name = "Punto interpolado",
+            X = new List<object> { xInterpolar }, // Datos del eje X
+            Y = new List<object> { resultado }, // Datos del eje Y
+            Mode = Plotly.Blazor.Traces.ScatterLib.ModeFlag.Markers, // Modo de la gráfica (líneas y marcadores)
+            Text = "Punto interpolado", // Etiquetas
+            TextPosition = (Plotly.Blazor.Traces.ScatterLib.TextPositionEnum?)TextPositionEnum.MiddleLeft
+        }
+
+    };
+
+        chart.Update(data, layout);
+
         return resultado; // Retorna el valor calculado
     }
 
@@ -120,6 +149,7 @@ public partial class Actividad3
 
         double resultado = diferenciasDivididas.CalcularInterpolacion();
         polinomioInterpolacion = diferenciasDivididas.polinomioInterpolacion;
+
         var x = diferenciasDivididas.puntosGraficar.Select(p => (object)p.X).ToList();
         var y = diferenciasDivididas.puntosGraficar.Select(p => (object)p.FX).ToList();
         data = new List<ITrace>
