@@ -20,6 +20,7 @@ public partial class Actividad3
     private string mensajeErrorGradoPolinomioErroneo = string.Empty;
     private string mensajeErrorDatosVacios = string.Empty;
     private double[,] matrizTablaDiferenciasDivididas;
+    private double[,] matrizTablaNeville;
     private string polinomioInterpolacion;
     private bool seleccionarTodos;
 
@@ -110,6 +111,7 @@ public partial class Actividad3
                 break;
             case "Neville":
                 resultadoInterpolacion = MetodoNeville();
+                ActualizarGrafica();
                 break;
         }
 
@@ -194,7 +196,33 @@ public partial class Actividad3
 
     private double MetodoNeville()
     {
-        // Implementa aquí el método de Neville
-        return 0; // Retorna el valor calculado
+        mostrarGrafica = true;
+        MetodoNeville neville = new(puntosSeleccionados, gradoInterpolacion, xInterpolar);
+        matrizTablaNeville = neville.tablaNeville; 
+        double resultado = neville.CalcularInterpolacion();
+        polinomioInterpolacion = neville.polinomioInterpolacion;
+
+        var x = neville.puntosGraficar.Select(p => (object)p.X).ToList();
+        var y = neville.puntosGraficar.Select(p => (object)p.FX).ToList();
+        data = new List<ITrace>
+    {
+        new Scatter
+        {
+            Name = "Polinomio",
+            Mode = Plotly.Blazor.Traces.ScatterLib.ModeFlag.Lines,
+            X = x,
+            Y = y
+        },
+        new Scatter
+        {
+            Name = "Punto interpolado",
+            X = new List<object> { xInterpolar },
+            Y = new List<object> { resultado },
+            Mode = Plotly.Blazor.Traces.ScatterLib.ModeFlag.Markers
+        }
+    };
+
+        chart.Update(data, layout);
+        return resultado;
     }
 }

@@ -156,7 +156,40 @@
                     
                     break;
                 case "Neville":
-                    resultadoInterpolacion = MetodoNeville();
+                    @if (matrizTablaNeville != null)
+                    {
+                        <h3 class="text-center mt-4">Tabla de Neville</h3>
+                        <div class="table-responsive">
+                            <table class="table table-striped table-bordered table-hover text-center shadow-sm">
+                                <thead class="table-dark">
+                                    <tr>
+                                        <th>X</th>
+                                        <th>f(Xᵢ)</th>
+                                        @for (int j = 2; j < matrizTablaNeville.GetLength(1); j++)
+                                        {
+                                            <th>Neville #@(j - 1)</th>
+                                        }
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @for (int i = 0; i < matrizTablaNeville.GetLength(0); i++) // Filas
+                                    {
+                                        <tr>
+                                            @for (int j = 0; j < matrizTablaNeville.GetLength(1); j++) // Columnas
+                                            {
+                                                <td>
+                                                    @(matrizTablaNeville[i, j] == -0.321123321123321123
+                                                        ? ""
+                                                        : matrizTablaNeville[i, j])
+                                                </td>
+                                            }
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    }
+
                     break;
             }
                 
