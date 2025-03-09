@@ -9,13 +9,13 @@ public class MetodoNeville(List<Punto> Puntos, int GradoInterpolacion, double xI
 
     public double CalcularInterpolacion()
     {
-        // Imprimir los puntos iniciales
-        Console.WriteLine("Puntos dados:");
-        foreach (var punto in puntos)
+        for (int k = 0; k < tablaNeville.GetLength(0); k++)
         {
-            Console.WriteLine($"x: {punto.X}, f(x): {punto.FX}");
+            for (int j = 0; j < tablaNeville.GetLength(1); j++)
+            {
+                tablaNeville[k, j] = -0.321123321123321123; // Asignar nulo en todas las celdas
+            }
         }
-
         // Inicializar la tabla con los valores de x y f(x)
         for (int i = 0; i < puntos.Count; i++)
         {
@@ -24,21 +24,20 @@ public class MetodoNeville(List<Punto> Puntos, int GradoInterpolacion, double xI
         }
 
         // Llenar la tabla de Neville
-        for (int j = 2; j <= puntos.Count; j++)
+        for (int j = 2; j <= GradoInterpolacion + 1; j++)
         {
             for (int i = 0; i < puntos.Count - (j - 1); i++)
             {
                 tablaNeville[i, j] = ((xInterpolado - tablaNeville[i + (j - 1), 0]) * tablaNeville[i, j - 1] -
                                        (xInterpolado - tablaNeville[i, 0]) * tablaNeville[i + 1, j - 1]) /
                                       (tablaNeville[i, 0] - tablaNeville[i + (j - 1), 0]);
- 
             }
         }
 
         double resultadoInterpolacion = tablaNeville[0, GradoInterpolacion + 1];
-        polinomioInterpolacion = GenerarCadenaPolinomio();
-        Console.WriteLine("Polinomio de Neville generado en el punto xInterpolado: " + polinomioInterpolacion);
-        Console.WriteLine($"Resultado final de la interpolación: {resultadoInterpolacion}");
+        Console.WriteLine($"El resultado en grado {GradoInterpolacion} es: {resultadoInterpolacion}");
+
+        polinomioInterpolacion = $"Polinomio de Neville de grado {GradoInterpolacion}";
 
         puntosGraficar = GenerarPuntos(xInterpolado, CalcularPuntoInterpolado);
         return resultadoInterpolacion;
@@ -47,20 +46,6 @@ public class MetodoNeville(List<Punto> Puntos, int GradoInterpolacion, double xI
     private double CalcularPuntoInterpolado(double x)
     {
         return tablaNeville[0, GradoInterpolacion + 1];
-    }
-
-    private string GenerarCadenaPolinomio()
-    {
-        string polinomio = "P(x) = ";
-        for (int j = 1; j <= GradoInterpolacion; j++)
-        {
-            polinomio += $"{tablaNeville[0, j]}";
-            if (j < GradoInterpolacion)
-            {
-                polinomio += " + ";
-            }
-        }
-        return polinomio;
     }
 
     public List<Punto> GenerarPuntos(double xInicial, Func<double, double> calcularFX)
