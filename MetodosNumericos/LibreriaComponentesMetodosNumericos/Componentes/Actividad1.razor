@@ -1,0 +1,62 @@
+﻿@using Microsoft.JSInterop
+@inject IJSRuntime JSRuntime
+
+<PageTitle>Actividad 1</PageTitle>
+
+<div id="app" class="container text-center">
+    <div id="menu" class="p-3">
+
+        <!-- Contenedor con fondo para las funciones matemáticas -->
+        <div id="funciones-container" class="card p-3">
+            <h4>Funciones Matemáticas</h4>
+
+            <div class="btn-group-grid">
+                <button class="but btn btn-light" id="exp">e^x</button>
+                <button class="but btn btn-light" id="nexp">e^-x</button>
+                <button class="but btn btn-light" id="sen">sen(x)</button>
+
+                <button class="but btn btn-light" id="cos">cos(x)</button>
+                <button class="but btn btn-light" id="senh">senh(x)</button>
+                <button class="but btn btn-light" id="cosh">cosh(x)</button>
+
+                <button class="but btn btn-light" id="ln">ln(1+x)</button>
+            </div>
+        </div>
+
+        <!-- Entrada de datos -->
+        <div class="mt-3">
+            <label class="form-label">Intervalo [ a , b ]</label>
+            <div class="input-group">
+                <input id="ainput" class="form-control inter" type="text" placeholder="a">
+                <input id="binput" class="form-control inter" type="text" placeholder="b">
+            </div>
+        </div>
+
+        <div class="mt-3">
+            <input id="gradosinp" type="text" class="form-control" placeholder="Grados">
+        </div>
+
+        <div class="mt-3">
+            <input type="text" id="sliderN" class="form-control" placeholder="n">
+        </div>
+
+        <div class="mt-3">
+            <button id="grfbtn" class="btn btn-dark w-100">Graficar</button>
+        </div>
+    </div>
+
+    <!-- Contenedor del gráfico -->
+    <div class="mt-4">
+        <canvas id="lineChart"></canvas>
+    </div>
+</div>
+
+@code {
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await JSRuntime.InvokeVoidAsync("initializeChart");
+        }
+    }
+}

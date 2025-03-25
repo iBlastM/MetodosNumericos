@@ -1,7 +1,4 @@
-/* Importar Bootstrap */
-@import url('https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css');
-
-html, body {
+﻿html, body {
     height: 100%;
     margin: 0;
     padding: 0;
@@ -30,7 +27,7 @@ html, body {
     background-color: white;
 }
 
-/* M�todos y funciones */
+/* Métodos y funciones */
 .methods {
     width: 100%;
     display: flex;
@@ -89,7 +86,7 @@ input {
     gap: 10px;
 }
 
-/* Contenedor de la gr�fica */
+/* Contenedor de la gráfica */
 #graph-container {
     width: 100%;
     max-width: 800px;
@@ -104,17 +101,17 @@ input {
 /* Ajustes para el canvas */
 canvas {
     width: 100% !important; /* Que use todo el ancho disponible */
-    height: 400px !important; /* Fijar una altura m�nima para que no se vea peque�a */
+    height: 400px !important; /* Fijar una altura mínima para que no se vea pequeña */
     max-width: 100%;
     display: block;
     margin: auto;
 }
 
-/* Secci�n de tabla */
+/* Sección de tabla */
 #cont-t {
     width: 100%;
     padding: 20px;
-    overflow-x: auto; /* Agregar scroll horizontal en m�viles */
+    overflow-x: auto; /* Agregar scroll horizontal en móviles */
 }
 
 /* Tablas */
@@ -128,7 +125,7 @@ table {
     box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.2);
 }
 
-/* Scroll horizontal para la tabla en pantallas peque�as */
+/* Scroll horizontal para la tabla en pantallas pequeñas */
 #cont-t {
     overflow-x: auto;
     white-space: nowrap;
@@ -161,7 +158,7 @@ tr:last-child td:last-child {
     border-bottom-right-radius: 10px;
 }
 
-/* Etiquetas de informaci�n */
+/* Etiquetas de información */
 #lbl {
     display: flex;
     flex-direction: column;
@@ -187,7 +184,7 @@ tr:last-child td:last-child {
 
 /* --- RESPONSIVIDAD --- */
 
-/* Para pantallas menores a 768px (tablets y m�viles) */
+/* Para pantallas menores a 768px (tablets y móviles) */
 @media (max-width: 768px) {
     #cont {
         flex-direction: column;
@@ -218,11 +215,11 @@ tr:last-child td:last-child {
 
     canvas {
         width: 100% !important;
-        height: 300px !important; /* Altura un poco menor en m�viles */
+        height: 300px !important; /* Altura un poco menor en móviles */
     }
 }
 
-/* Para pantallas menores a 480px (m�viles peque�os) */
+/* Para pantallas menores a 480px (móviles pequeños) */
 @media (max-width: 480px) {
     .btnfn, .btnmtd, .btng {
         max-width: 100%;
@@ -233,10 +230,10 @@ tr:last-child td:last-child {
     }
 
     canvas {
-        height: 250px !important; /* Evitar que se haga demasiado grande en m�viles */
+        height: 250px !important; /* Evitar que se haga demasiado grande en móviles */
     }
 
     table {
-        font-size: 14px; /* Reduce el tama�o de la fuente para que quepa mejor */
+        font-size: 14px; /* Reduce el tamaño de la fuente para que quepa mejor */
     }
 }
