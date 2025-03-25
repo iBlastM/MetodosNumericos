@@ -68,7 +68,6 @@
 
     <ItemGroup>
       <ProjectReference Include="..\LibreriaComponentesMetodosNumericos\LibreriaComponentesMetodosNumericos.csproj" />
-      <ProjectReference Include="..\MetodosInterpolacion\MetodosInterpolacion.csproj" />
     </ItemGroup>
 
 </Project>
