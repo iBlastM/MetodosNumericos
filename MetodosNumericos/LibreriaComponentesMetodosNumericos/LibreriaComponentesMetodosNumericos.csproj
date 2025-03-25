@@ -11,12 +11,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="MathJaxBlazor" Version="2.0.1" />
     <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="9.0.3" />
     <PackageReference Include="Plotly.Blazor" Version="6.0.1" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\MetodosInterpolacion\MetodosInterpolacion.csproj" />
+    <ProjectReference Include="..\SistemasDeEcuaciones\SistemasDeEcuaciones.csproj" />
   </ItemGroup>
 
 </Project>

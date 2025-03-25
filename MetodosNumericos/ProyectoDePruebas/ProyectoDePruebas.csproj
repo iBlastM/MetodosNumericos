@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MetodosInterpolacion\MetodosInterpolacion.csproj" />
+    <ProjectReference Include="..\SistemasDeEcuaciones\SistemasDeEcuaciones.csproj" />
   </ItemGroup>
 
 </Project>
