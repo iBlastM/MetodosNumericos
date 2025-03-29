@@ -1,11 +1,9 @@
 namespace LibreriaComponentesMetodosNumericos.Componentes;
 using MetodosInterpolacion;
 using MetodosInterpolacion.Metodos;
-using Microsoft.AspNetCore.Components;
 using Plotly.Blazor;
 using Plotly.Blazor.Traces;
 using Plotly.Blazor.Traces.ScatterCarpetLib;
-using Plotly.Blazor.Traces.TableLib;
 public partial class Actividad3
 {
     private List<Punto> puntos = new();

@@ -1,0 +1,20 @@
+﻿/* Estilos para el formulario */
+.card-form {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para la sección de solucion */
+.solutionn-options {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el select de múltiples opciones */
+select.form-control[multiple] {
+    height: 120px;
+}
+

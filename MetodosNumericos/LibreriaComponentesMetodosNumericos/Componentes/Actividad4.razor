@@ -38,3 +38,42 @@
         </div>
     </div>
 </div>
+
+<div class="solution-options card card-form mt-4">
+    <h5 class="card-title">Configuración de Interpolación</h5>
+
+    <!-- Selección de método del calculo de soluciones -->
+    <label for="metodo">Seleccione el método de interpolación:</label>
+    <select id="metodo" class="form-control" @bind="metodoSeleccionado">
+            <option value="HaciaAtras">Eliminación Gaussiana con sustitución hacia atrás</option>
+            <option value="PivoteoMaximo">Eliminación Gaussiana con Pivoteo Máximo de Columnas</option>
+            <option value="PivoteoEscalado">Eliminación Gaussiana con Pivoteo Escalado de Columna.</option>
+    </select>
+
+    <div class="d-flex justify-content-center mt-3">
+        <button class="btn btn-success" @onclick="CalcularSoluciones">Calcular soluciones del sistema</button>
+    </div>
+
+    <!-- Mostrar resultado -->
+    @if (tieneSolucion)
+    {
+        <div class="alert alert-info mt-3 text-center">
+            @switch (metodoSeleccionado)
+            {
+                    case "Eliminación Gaussiana con sustitución hacia atrás":
+                    <div>
+                        <h5 class="card-title">Hola</h5>
+                        </div>
+                    break;
+
+                    case "Eliminación Gaussiana con Pivoteo Máximo de Columnas":
+                    
+                    break;
+
+                    case "Eliminación Gaussiana con Pivoteo Escalado de Columna.":
+                    
+                    break;
+            }
+        </div>
+    }
+</div>

@@ -1,8 +1,9 @@
 ﻿namespace SistemasDeEcuaciones;
-internal class Termino
+public class Termino
 {
     public string Variable { get; set; }
     public double[] Coeficientes { get; set; }
+    public double Solucion { get; set; }
 
     public Termino(int n, string variable)
     {

@@ -1,9 +1,10 @@
 ﻿using System.Text.RegularExpressions;
 
 namespace SistemasDeEcuaciones;
-public static class Helpers
+public class Helpers
 {
-    public static bool EsSistemaValido(string sistema)
+    public List<Termino> terminos { get; private set; } = new List<Termino>();
+    public bool EsSistemaValido(string sistema)
     {
         if (string.IsNullOrWhiteSpace(sistema))
             return false;
@@ -23,9 +24,9 @@ public static class Helpers
         return true;
     }
 
-    public static double[,] ObtenerMatrizAmpliada(string sistemaDeEcuaciones)
+    public double[,] ObtenerMatrizAmpliada(string sistemaDeEcuaciones)
     {
-        List<Termino> terminos = new List<Termino>();
+        
 
         if (!EsSistemaValido(sistemaDeEcuaciones))
             return null;
@@ -94,7 +95,7 @@ public static class Helpers
         return matriz;
     }
 
-    static void AgregarTermino(List<Termino> lista, Termino nuevoTermino, string numero, int nFila)
+    public void AgregarTermino(List<Termino> lista, Termino nuevoTermino, string numero, int nFila)
     {
         if (!lista.Any(t => t.Variable == nuevoTermino.Variable))
         {
@@ -115,7 +116,7 @@ public static class Helpers
         }
     }
 
-    public static string MostrarSistemaEcuaciones(string SistemaEcuaciones)
+    public string MostrarSistemaEcuaciones(string SistemaEcuaciones)
     {
         if (string.IsNullOrEmpty(SistemaEcuaciones))
             return string.Empty;
@@ -124,7 +125,7 @@ public static class Helpers
         return string.Join("\n", ecuaciones);
     }
 
-    public static string MostrarMatrizAmpliada(double[,] MatrizAmpliada)
+    public string MostrarMatrizAmpliada(double[,] MatrizAmpliada)
     {
         if (MatrizAmpliada == null) return string.Empty;
 
