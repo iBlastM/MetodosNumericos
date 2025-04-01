@@ -1,6 +1,6 @@
 ﻿namespace SistemasDeEcuaciones;
 public class Paso
 {
-    string operacion { get; set; }
-    double[,] matriz { get; set; }
+    public string operacion { get; set; }
+    public double[,] matriz { get; set; }
 }

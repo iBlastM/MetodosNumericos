@@ -10,7 +10,7 @@ public class Helpers
             return false;
 
         // Expresión regular para validar ecuaciones del tipo "ax + by + ... + nz = c"
-        string patronEcuacion = @"^\s*([\+\-]?\s*\d*[a-zA-Z](\s*[\+\-]\s*\d*[a-zA-Z])*)\s*=\s*[\+\-]?\d+\s*$";
+        string patronEcuacion = @"^\s*([\+\-]?\s*\d*(?:\.\d+)?[a-zA-Z](\s*[\+\-]\s*\d*(?:\.\d+)?[a-zA-Z])*)\s*=\s*[\+\-]?\d*(?:\.\d+)?\s*$";
 
         // Dividir por comas para analizar cada ecuación individualmente
         string[] ecuaciones = sistema.Split(',');
@@ -54,7 +54,7 @@ public class Helpers
                     numero += caracteres[i];
                     i++;
                 }
-                else if (char.IsDigit(caracteres[i]))
+                else if (char.IsDigit(caracteres[i]) || caracteres[i] == '.')
                 {
                     numero += caracteres[i];
                     i++;
@@ -125,12 +125,12 @@ public class Helpers
         return string.Join("\n", ecuaciones);
     }
 
-    public string MostrarMatrizAmpliada(double[,] MatrizAmpliada)
+    public string MostrarMatrizAmpliada(double[,] matrizAmpliada)
     {
-        if (MatrizAmpliada == null) return string.Empty;
+        if (matrizAmpliada == null) return string.Empty;
 
-        int filas = MatrizAmpliada.GetLength(0);
-        int cols = MatrizAmpliada.GetLength(1);
+        int filas = matrizAmpliada.GetLength(0);
+        int cols = matrizAmpliada.GetLength(1);
 
         // Determinar el ancho máximo de cada columna para una alineación uniforme
         int[] maxAnchoColumna = new int[cols];
@@ -140,7 +140,7 @@ public class Helpers
             maxAnchoColumna[j] = 0;
             for (int i = 0; i < filas; i++)
             {
-                maxAnchoColumna[j] = Math.Max(maxAnchoColumna[j], MatrizAmpliada[i, j].ToString().Length);
+                maxAnchoColumna[j] = Math.Max(maxAnchoColumna[j], matrizAmpliada[i, j].ToString().Length);
             }
         }
 
@@ -152,7 +152,7 @@ public class Helpers
 
             for (int j = 0; j < cols; j++)
             {
-                string valor = MatrizAmpliada[i, j].ToString().PadLeft(maxAnchoColumna[j]);
+                string valor = matrizAmpliada[i, j].ToString().PadLeft(maxAnchoColumna[j]);
 
                 if (j == cols - 1)
                     elementos.Add("| " + valor);  // Separador para la última columna

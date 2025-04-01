@@ -1,7 +1,35 @@
 ﻿using SistemasDeEcuaciones;
+using SistemasDeEcuaciones.Metodos;
 
-Console.WriteLine("x + y = 2, y - x = 0, 3x + y = 4");
-double[,] matriz = Helpers.ObtenerMatrizAmpliada("x + y = 2, y - x = 0, 3x + y = 4");
+Helpers helpers = new();
+
+
+Console.WriteLine("0.5x + y = 2, y - x = -1");
+double[,] matriz = helpers.ObtenerMatrizAmpliada("0.5x + y = 2, y - x = -1");
+
+ImprimirMatriz(matriz);
+
+SustitucionAtras sustitucionAtras = new(helpers.terminos);
+
+if (sustitucionAtras.CalcularSoluciones(matriz))
+{
+    Console.WriteLine("Soluciones encontradas:");
+    foreach (Termino termino in helpers.terminos)
+    {
+        Console.WriteLine($"{termino.Variable} = {termino.Solucion}");
+    }
+    foreach (Paso paso in sustitucionAtras.pasos)
+    {
+        Console.WriteLine(paso.operacion);
+        ImprimirMatriz(paso.matriz);
+    }
+}
+else
+{
+    Console.WriteLine("No se encontraron soluciones");
+}
+
+
 
 static void ImprimirMatriz(double[,] matriz)
 {
@@ -17,5 +45,3 @@ static void ImprimirMatriz(double[,] matriz)
         Console.WriteLine(); 
     }
 }
-
-ImprimirMatriz(matriz);
