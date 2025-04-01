@@ -49,10 +49,10 @@ public class PivoteoEscalado(List<Termino> terminos) : IMetodo
             }
         }
 
-        
+         
         if (matriz[indice[n - 1], n - 1] == 0) return false;
         Terminos[^1].Solucion = matriz[indice[n - 1], n] / matriz[indice[n - 1], n - 1];
-        pasos.Add(new Paso { operacion = $"Solución última variable: {Terminos[^1].Solucion}", matriz = (double[,])matriz.Clone() });
+        pasos.Add(new Paso { operacion = $"Solución variable {Terminos[^1].Variable}: {Terminos[^1].Solucion}", matriz = (double[,])matriz.Clone() });
 
         for (int i = n - 2; i >= 0; i--)
         {
