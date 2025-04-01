@@ -88,7 +88,19 @@
                     break;
 
                 case "PivoteoEscalado":
-                    
+                    <h6>Matriz Ampliada inicial:</h6>
+                    <pre>@MostrarMatrizAmpliada(MatrizAmpliadaInicial)</pre>
+                    int k = 1;
+                    @foreach (var paso in pasos)
+                    {
+                        <p>Paso @k: @paso.operacion</p>
+                        @if (k <= pasos.Count - helpers.terminos.Count)
+                        {
+                            <h6>Matriz Ampliada después del paso @k:</h6>
+                            <pre>@MostrarMatrizAmpliada(paso.matriz)</pre>
+                        }
+                        k++;
+                    }
                     break;
             }
         </div>

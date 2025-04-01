@@ -73,7 +73,11 @@ public partial class Actividad4
 
                 break;
             case "PivoteoEscalado":
-
+                PivoteoEscalado pivoteoEscalado = new(helpers.terminos);
+                if (tieneSolucion = pivoteoEscalado.CalcularSoluciones(MatrizAmpliada))
+                {
+                    pasos = pivoteoEscalado.pasos;
+                }
                 break;
         }
 
