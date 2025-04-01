@@ -13,6 +13,7 @@ public partial class Actividad4
     private double[,]? MatrizAmpliadaInicial { get; set; }
 
     private string mensajeErrorEntradaSistema = string.Empty;
+    private string mensajeErrorSistemaSinSolucion = string.Empty;
     private bool errorMatrizNoCuadrada = false;
     private Helpers helpers = new Helpers();
     private string metodoSeleccionado = "Eliminación Gaussiana con sustitución hacia atrás";
@@ -51,6 +52,8 @@ public partial class Actividad4
         if (MatrizAmpliada.GetLength(0) != helpers.terminos.Count)
         {
             errorMatrizNoCuadrada = true;
+            mensajeErrorSistemaSinSolucion = string.Empty;
+            tieneSolucion = false;
             return;
         }
 
@@ -72,6 +75,15 @@ public partial class Actividad4
             case "PivoteoEscalado":
 
                 break;
+        }
+
+        if(!tieneSolucion)
+        {
+            mensajeErrorSistemaSinSolucion = "El sistema no tiene solución o tiene soluciones infinitas";
+        }
+        else
+        {
+            mensajeErrorSistemaSinSolucion = string.Empty;
         }
 
     }

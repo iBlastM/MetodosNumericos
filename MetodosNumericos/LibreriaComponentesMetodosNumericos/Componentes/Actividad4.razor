@@ -93,4 +93,9 @@
             }
         </div>
     }
+
+    @if (!string.IsNullOrEmpty(mensajeErrorSistemaSinSolucion))
+    {
+        <div class="alert alert-danger mt-2">@mensajeErrorSistemaSinSolucion</div>
+    }
 </div>
