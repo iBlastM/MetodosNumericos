@@ -5,7 +5,7 @@
 <div class="container mt-5">
 
     <div class="d-flex justify-content-center">
-        <div class="card shadow-lg p-4" style="max-width: 600px; width: 100%;">
+        <div class="card shadow-lg p-4" style="width: 100%;">
             <h4 class="card-title text-center">Ingresar Sistema de Ecuaciones</h4>
             <EditForm Model="this" OnValidSubmit="@GenerarMatrizAmpliada">
                 <div class="mb-3">
@@ -40,10 +40,10 @@
 </div>
 
 <div class="solution-options card card-form mt-4">
-    <h5 class="card-title">Configuración de Interpolación</h5>
+    <h5 class="card-title">Calculo de soluciones</h5>
 
     <!-- Selección de método del calculo de soluciones -->
-    <label for="metodo">Seleccione el método de interpolación:</label>
+    <label for="metodo">Seleccione el método de calculo de soluciones:</label>
     <select id="metodo" class="form-control" @bind="metodoSeleccionado">
         <option value="HaciaAtras">Eliminación Gaussiana con sustitución hacia atrás</option>
         <option value="PivoteoMaximo">Eliminación Gaussiana con Pivoteo Máximo de Columnas</option>
@@ -54,6 +54,10 @@
         <button class="btn btn-success" @onclick="CalcularSoluciones">Calcular soluciones del sistema</button>
 
     </div>
+    @if (!string.IsNullOrEmpty(mensajeErrorNoHayMatriz))
+    {
+        <div class="alert alert-danger mt-2">@mensajeErrorNoHayMatriz</div>
+    }
     @if (errorMatrizNoCuadrada)
     {
         <div class="alert alert-danger mt-2">La matriz introducida no es una matriz cuadrada, por favor ingrese una que sí lo sea.</div>
@@ -80,6 +84,10 @@
                         }
                         
                         i++;
+                    }
+                    <h6>Soluciones: </h6>
+                    @foreach(Termino termino in helpers.terminos){
+                        <h6>@termino.Variable: @termino.Solucion</h6>
                     }
                     break;
 

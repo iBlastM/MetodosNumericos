@@ -8,29 +8,33 @@ public class SustitucionAtras(List<Termino> terminos) : IMetodo
     {
         int n = matriz.GetLength(0);
 
+        //Paso 2
+        int p = 0;
+        int fila = 0;
+
+        while (matriz[p, fila] == 0 && p <= n - 1) p++;
+        if (matriz[p, fila] == 0) return false;
+
+        //Paso 3
+        if (p != fila)
+        { // Intercambiar filas
+            for (int j = 0; j <= n; j++)
+            {
+                double temp = matriz[fila, j];
+                matriz[fila, j] = matriz[p, j];
+                matriz[p, j] = temp;
+            }
+            pasos.Add(new Paso
+            {
+                operacion = $"Intercambiar fila {fila + 1} con fila {p + 1}",
+                matriz = matriz.Clone() as double[,]
+            });
+        }
+
         // Paso 1
         for (int i = 0; i < n - 1; i++)
         {
-            //Paso 2
-            int p = 0;
-            while(matriz[p, i] == 0 && p <= n - 1) p++;
-            if(matriz[p, i] == 0) return false;
-
-            //Paso 3
-            if (p != i)
-            { // Intercambiar filas
-                for (int j = 0; j < n; j++)
-                {
-                    double temp = matriz[i, j];
-                    matriz[i, j] = matriz[p, j];
-                    matriz[p, j] = temp;
-                    pasos.Add(new Paso
-                    {
-                        operacion = $"Intercambiar fila {i + 1} con fila {p + 1}",
-                        matriz = matriz.Clone() as double[,]
-                    });
-                }
-            }
+            
 
             //Paso 4
             for(int j = i + 1; j < n; j++)
@@ -73,7 +77,7 @@ public class SustitucionAtras(List<Termino> terminos) : IMetodo
             Terminos[i].Solucion = (matriz[i, n] - sum) / matriz[i, i];
             pasos.Add(new Paso
             {
-                operacion = $"Solución de la variable {Terminos[i].Variable}: (matriz[{i}, n] - {sum}) / matriz[{i}, {i}] = {(matriz[i, n] - sum) / matriz[i, i]}",
+                operacion = $"Solución de la variable {Terminos[i].Variable}: (matriz[{i}, n] - ({sum})) / matriz[{i}, {i}] = {(matriz[i, n] - sum) / matriz[i, i]}",
                 matriz = matriz.Clone() as double[,]
             });
         }
