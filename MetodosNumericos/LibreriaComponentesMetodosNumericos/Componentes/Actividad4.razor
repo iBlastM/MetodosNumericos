@@ -122,10 +122,13 @@
                 case "PivoteoEscalado":
                     <h6>Matriz Ampliada inicial:</h6>
                     <pre>@MostrarMatrizAmpliada(MatrizAmpliadaInicial)</pre>
+
                     int k = 1;
+
                     @foreach (var paso in pasos)
                     {
                         <p>Paso @k: @paso.operacion</p>
+
                         @if (k <= pasos.Count - helpers.terminos.Count)
                         {
                             <h6>Matriz Ampliada después del paso @k:</h6>
@@ -133,7 +136,12 @@
                         }
                         k++;
                     }
-                    break;
+                    <h6>Soluciones: </h6>
+                    @foreach(Termino termino in helpers.terminos){
+                        <h6>@termino.Variable: @termino.Solucion</h6>
+                    }
+
+                break;
             }
         </div>
     }
