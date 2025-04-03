@@ -92,7 +92,31 @@
                     break;
 
                 case "PivoteoMaximo":
+                    <h6>Matriz Ampliada inicial:</h6>
+                    <pre>@MostrarMatrizAmpliada(MatrizAmpliadaInicial)</pre>
+
                     
+                    int j = 1;
+             
+
+                    @foreach (var paso in pasos)
+                    {
+                        <p>Paso @j: @paso.operacion</p>
+    
+                        @if (j <= pasos.Count - helpers.terminos.Count)
+                        {
+                            <h6>Matriz Ampliada después del paso @j:</h6>
+                            <pre>@MostrarMatrizAmpliada(paso.matriz)</pre>
+                        }
+                        j++;
+                    }
+
+                    <h6>Soluciones: </h6>
+                    @foreach(Termino termino in helpers.terminos){
+                        <h6>@termino.Variable: @termino.Solucion</h6>
+                    }
+
+
                     break;
 
                 case "PivoteoEscalado":

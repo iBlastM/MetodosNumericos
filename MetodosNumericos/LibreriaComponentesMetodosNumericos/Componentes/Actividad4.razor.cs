@@ -90,7 +90,12 @@ public partial class Actividad4
                 
                 break;
             case "PivoteoMaximo":
-
+                PivoteoMaximo pivoteoMaximo = new(helpers.terminos);
+                if (tieneSolucion = pivoteoMaximo.CalcularSoluciones(MatrizAmpliada))
+                {
+                    pasos = pivoteoMaximo.pasos;
+                }
+                break;
                 break;
             case "PivoteoEscalado":
                 PivoteoEscalado pivoteoEscalado = new(helpers.terminos);
