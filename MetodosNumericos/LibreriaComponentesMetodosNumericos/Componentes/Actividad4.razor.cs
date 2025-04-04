@@ -83,7 +83,7 @@ public partial class Actividad4
         {
             case "HaciaAtras":
                 SustitucionAtras sustitucionAtras = new SustitucionAtras(helpers.terminos);
-                if(tieneSolucion = sustitucionAtras.CalcularSoluciones(MatrizAmpliada))
+                if(tieneSolucion = sustitucionAtras.CalcularSoluciones(MatrizAmpliada.Clone() as double[,]))
                 {
                     pasos = sustitucionAtras.pasos;
                 }
@@ -91,14 +91,14 @@ public partial class Actividad4
                 break;
             case "PivoteoMaximo":
                 PivoteoMaximo pivoteoMaximo = new(helpers.terminos);
-                if (tieneSolucion = pivoteoMaximo.CalcularSoluciones(MatrizAmpliada))
+                if (tieneSolucion = pivoteoMaximo.CalcularSoluciones(MatrizAmpliada.Clone() as double[,]))
                 {
                     pasos = pivoteoMaximo.pasos;
                 }
                 break;
             case "PivoteoEscalado":
                 PivoteoEscalado pivoteoEscalado = new(helpers.terminos);
-                if (tieneSolucion = pivoteoEscalado.CalcularSoluciones(MatrizAmpliada))
+                if (tieneSolucion = pivoteoEscalado.CalcularSoluciones(MatrizAmpliada.Clone() as double[,]))
                 {
                     pasos = pivoteoEscalado.pasos;
                 }
