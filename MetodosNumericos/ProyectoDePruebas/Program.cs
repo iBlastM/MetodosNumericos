@@ -4,30 +4,11 @@ using SistemasDeEcuaciones.Metodos;
 Helpers helpers = new();
 
 
-Console.WriteLine("0.5x + y = 2, y - x = -1");
-double[,] matriz = helpers.ObtenerMatrizAmpliada("0.5x + y = 2, y - x = -1");
-
-ImprimirMatriz(matriz);
-
-SustitucionAtras sustitucionAtras = new(helpers.terminos);
-
-if (sustitucionAtras.CalcularSoluciones(matriz))
-{
-    Console.WriteLine("Soluciones encontradas:");
-    foreach (Termino termino in helpers.terminos)
-    {
-        Console.WriteLine($"{termino.Variable} = {termino.Solucion}");
-    }
-    foreach (Paso paso in sustitucionAtras.pasos)
-    {
-        Console.WriteLine(paso.operacion);
-        ImprimirMatriz(paso.matriz);
-    }
-}
-else
-{
-    Console.WriteLine("No se encontraron soluciones");
-}
+NCalc.Expression exp = new NCalc.Expression("2*Pow(2, 2)");
+exp.Parameters["x"] = 2;
+exp.Parameters["e"] = 2.718281828459045;
+var resultado = exp.Evaluate();
+Console.WriteLine(resultado);
 
 
 
