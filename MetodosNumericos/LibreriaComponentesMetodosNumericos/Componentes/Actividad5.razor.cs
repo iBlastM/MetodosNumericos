@@ -17,11 +17,14 @@ public partial class Actividad5
 
     string Transformar(string expr)
     {
-        // Insertar * entre número y letra (2x -> 2*x)
+        // Inserta * entre número y letra (2x -> 2*x)
         expr = Regex.Replace(expr, @"(\d)([a-zA-Z])", "$1*$2");
 
-        // Transformar potencias simples a Pow()
-        expr = Regex.Replace(expr, @"([a-zA-Z0-9\.]+)\^([a-zA-Z0-9\.\*\+\-\/]+)", "Pow($1,$2)");
+        // Potencias con paréntesis en el exponente: e^(x^2) -> Pow(e, Pow(x,2))
+        expr = Regex.Replace(expr, @"([a-zA-Z0-9\.]+)\^\(([^)]+)\)", "Pow($1,$2)");
+
+        // Potencias simples: x^2 -> Pow(x,2)
+        expr = Regex.Replace(expr, @"([a-zA-Z0-9\.]+)\^([a-zA-Z0-9\.]+)", "Pow($1,$2)");
 
         return expr;
     }
