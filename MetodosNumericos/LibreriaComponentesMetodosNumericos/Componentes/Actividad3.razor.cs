@@ -165,7 +165,7 @@ public partial class Actividad3
         var x = diferenciasDivididas.puntosGraficar.Select(p => (object)p.X).ToList();
         var y = diferenciasDivididas.puntosGraficar.Select(p => (object)p.FX).ToList();
         data = new List<ITrace>
-    {
+        {
         new Scatter
         {
             Name = "Polinomio",
@@ -180,7 +180,7 @@ public partial class Actividad3
             Name = "Punto interpolado",
             X = new List<object> { xInterpolar }, // Datos del eje X
             Y = new List<object> { resultado }, // Datos del eje Y
-            Mode = Plotly.Blazor.Traces.ScatterLib.ModeFlag.Markers, // Modo de la gráfica (líneas y marcadores)
+            Mode = Plotly.Blazor.Traces.ScatterLib.ModeFlag.Markers, // Modo de la gráfica (líneas)
             Text = "Punto interpolado", // Etiquetas
             TextPosition = (Plotly.Blazor.Traces.ScatterLib.TextPositionEnum?)TextPositionEnum.MiddleLeft
         }
