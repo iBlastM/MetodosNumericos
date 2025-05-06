@@ -99,6 +99,36 @@ public partial class Actividad5
                 case "trapecio_simple":
                     TrapecioSimple trapecioSimple = new TrapecioSimple(expresion);
                     resultado = trapecioSimple.Integrar(aNumerico, bNumerico);
+                    List<Punto> puntosFuncionRealTS = trapecioSimple.obtenerPuntosGraficarFuncionReal(aNumerico, bNumerico);
+                    List<Punto> puntosTrpecio = trapecioSimple.obtenerPuntosGraficar(aNumerico, bNumerico);
+                    LimpiarGrafica();
+
+                    var scatterTS = data[0] as Scatter;
+                    foreach (var punto in puntosTrpecio)
+                    {
+                        scatterTS?.X.Add(punto.X);
+                        scatterTS?.Y.Add(punto.FX);
+                    }
+
+                    var scatterFuncionRealTS = data[2] as Scatter;
+                    foreach (var punto in puntosFuncionRealTS)
+                    {
+                        scatterFuncionRealTS?.X.Add(punto.X);
+                        scatterFuncionRealTS?.Y.Add(punto.FX);
+                    }
+
+                    await chart.React();
+                    await InvokeAsync(StateHasChanged);
+
+                    var scatter2_13 = data[1] as Scatter;
+                    scatter2_13?.X.Add(puntosTrpecio[0].X);
+                    scatter2_13?.Y.Add(puntosTrpecio[0].FX);
+                    scatter2_13?.X.Add(puntosFuncionRealTS[puntosFuncionRealTS.Count - 1].X);
+                    scatter2_13?.Y.Add(puntosFuncionRealTS[puntosFuncionRealTS.Count - 1].FX);
+
+                    await chart.React();
+                    await InvokeAsync(StateHasChanged);
+
                     break;
 
                 case "trapecio_compuesto":
@@ -130,11 +160,11 @@ public partial class Actividad5
                     await chart.React();
                     await InvokeAsync(StateHasChanged);
 
-                    var scatter2_13 = data[1] as Scatter;
-                    scatter2_13?.X.Add(puntosSimpson13[0].X);
-                    scatter2_13?.Y.Add(puntosSimpson13[0].FX);
-                    scatter2_13?.X.Add(puntosSimpson13[puntosSimpson13.Count - 1].X);
-                    scatter2_13?.Y.Add(puntosSimpson13[puntosSimpson13.Count - 1].FX);
+                    var scatter2_TS = data[1] as Scatter;
+                    scatter2_TS?.X.Add(puntosSimpson13[0].X);
+                    scatter2_TS?.Y.Add(puntosSimpson13[0].FX);
+                    scatter2_TS?.X.Add(puntosSimpson13[puntosSimpson13.Count - 1].X);
+                    scatter2_TS?.Y.Add(puntosSimpson13[puntosSimpson13.Count - 1].FX);
 
                     await chart.React();
                     await InvokeAsync(StateHasChanged);
