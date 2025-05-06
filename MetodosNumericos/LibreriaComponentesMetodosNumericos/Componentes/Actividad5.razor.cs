@@ -54,9 +54,13 @@ public partial class Actividad5
             switch (MetodoSeleccionado)
             {
                 case "trapecio_simple":
+                    TrapecioSimple trapecioSimple = new TrapecioSimple(expresion);
+                    resultado = trapecioSimple.Integrar(aNumerico, bNumerico);
                     break;
 
                 case "trapecio_compuesto":
+                    TrapecioCompuesta trapecioCompuesta = new TrapecioCompuesta(expresion);
+                    resultado = trapecioCompuesta.Integrar(aNumerico, bNumerico, n);
                     break;
 
                 case "simpson_13_simple":
