@@ -107,11 +107,82 @@ public partial class Actividad5
                     break;
 
                 case "simpson_13_simple":
+                    SimpsonUnTercioSimple simpsonUnTercioSimple = new SimpsonUnTercioSimple(expresion);
+                    resultado = simpsonUnTercioSimple.Integrar(aNumerico, bNumerico);
+                    List<Punto> puntosSimpson13 = simpsonUnTercioSimple.obtenerPuntosGraficar(aNumerico, bNumerico);
+                    List<Punto> puntosFuncionReal13 = simpsonUnTercioSimple.obtenerPuntosGraficarFuncionReal(aNumerico, bNumerico);
+                    LimpiarGrafica();
+
+                    var scatter13 = data[0] as Scatter;
+                    foreach (var punto in puntosSimpson13)
+                    {
+                        scatter13?.X.Add(punto.X);
+                        scatter13?.Y.Add(punto.FX);
+                    }
+
+                    var scatterFuncionReal13 = data[2] as Scatter;
+                    foreach (var punto in puntosFuncionReal13)
+                    {
+                        scatterFuncionReal13?.X.Add(punto.X);
+                        scatterFuncionReal13?.Y.Add(punto.FX);
+                    }
+
+                    await chart.React();
+                    await InvokeAsync(StateHasChanged);
+
+                    var scatter2_13 = data[1] as Scatter;
+                    scatter2_13?.X.Add(puntosSimpson13[0].X);
+                    scatter2_13?.Y.Add(puntosSimpson13[0].FX);
+                    scatter2_13?.X.Add(puntosSimpson13[puntosSimpson13.Count - 1].X);
+                    scatter2_13?.Y.Add(puntosSimpson13[puntosSimpson13.Count - 1].FX);
+
+                    await chart.React();
+                    await InvokeAsync(StateHasChanged);
+
                     break;
 
                 case "simpson_13_compuesto":
+                    if (n % 2 != 0)
+                    {
+                        mensajeErrorSubIntervalosNoValidos = "n debe ser par para Simpson 1/3 compuesta";
+                        resultado = null;
+                        return;
+                    }
+
+                    mensajeErrorSubIntervalosNoValidos = string.Empty;
+
+                    SimpsonUnTercioCompuesta simpsonUnTercioCompuesta = new SimpsonUnTercioCompuesta(expresion);
+                    resultado = simpsonUnTercioCompuesta.Integrar(aNumerico, bNumerico, n);
+                    List<Punto> puntosEvaluados = simpsonUnTercioCompuesta.obtenerPuntosEvaluados(aNumerico, bNumerico, n);
+                    List<Punto> puntosFuncionReal13C = simpsonUnTercioCompuesta.obtenerPuntosGraficarFuncionReal(aNumerico, bNumerico);
+
+                    LimpiarGrafica();
+
+                    var scatter13C = data[0] as Scatter;
+                    foreach (var punto in puntosEvaluados)
+                    {
+                        scatter13C?.X.Add(punto.X);
+                        scatter13C?.Y.Add(punto.FX);
+                    }
+
+                    var scatterFuncion13 = data[2] as Scatter;
+                    foreach (var punto in puntosFuncionReal13C)
+                    {
+                        scatterFuncion13?.X.Add(punto.X);
+                        scatterFuncion13?.Y.Add(punto.FX);
+                    }
+
+                    var scatter13Extremos = data[1] as Scatter;
+                    scatter13Extremos?.X.Add(puntosEvaluados[0].X);
+                    scatter13Extremos?.Y.Add(puntosEvaluados[0].FX);
+                    scatter13Extremos?.X.Add(puntosEvaluados[^1].X);
+                    scatter13Extremos?.Y.Add(puntosEvaluados[^1].FX);
+
+                    await chart.React();
+                    await InvokeAsync(StateHasChanged);
 
                     break;
+
 
                 case "simpson_38_simple":
                     SimpsonTresOctavosSimple simpsonTresOctavosSimple = new SimpsonTresOctavosSimple(expresion);
