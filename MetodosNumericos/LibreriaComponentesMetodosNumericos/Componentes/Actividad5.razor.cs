@@ -120,11 +120,11 @@ public partial class Actividad5
                     await chart.React();
                     await InvokeAsync(StateHasChanged);
 
-                    var scatter2_13 = data[1] as Scatter;
-                    scatter2_13?.X.Add(puntosTrpecio[0].X);
-                    scatter2_13?.Y.Add(puntosTrpecio[0].FX);
-                    scatter2_13?.X.Add(puntosFuncionRealTS[puntosFuncionRealTS.Count - 1].X);
-                    scatter2_13?.Y.Add(puntosFuncionRealTS[puntosFuncionRealTS.Count - 1].FX);
+                    var scatter2_TS = data[1] as Scatter;
+                    scatter2_TS?.X.Add(puntosTrpecio[0].X);
+                    scatter2_TS?.Y.Add(puntosTrpecio[0].FX);
+                    scatter2_TS?.X.Add(puntosFuncionRealTS[puntosFuncionRealTS.Count - 1].X);
+                    scatter2_TS?.Y.Add(puntosFuncionRealTS[puntosFuncionRealTS.Count - 1].FX);
 
                     await chart.React();
                     await InvokeAsync(StateHasChanged);
@@ -134,6 +134,35 @@ public partial class Actividad5
                 case "trapecio_compuesto":
                     TrapecioCompuesta trapecioCompuesta = new TrapecioCompuesta(expresion);
                     resultado = trapecioCompuesta.Integrar(aNumerico, bNumerico, n);
+                    List<Punto> puntosFuncionRealTC = trapecioCompuesta.obtenerPuntosGraficarFuncionReal(aNumerico, bNumerico);
+                    List<Punto> puntosTrpecioC = trapecioCompuesta.obtenerPuntosGraficar(aNumerico, bNumerico, n);
+                    LimpiarGrafica();
+
+                    var scatterTC = data[0] as Scatter;
+                    foreach (var punto in puntosTrpecioC)
+                    {
+                        scatterTC?.X.Add(punto.X);
+                        scatterTC?.Y.Add(punto.FX);
+                    }
+
+                    var scatterFuncionRealTC = data[2] as Scatter;
+                    foreach (var punto in puntosFuncionRealTC)
+                    {
+                        scatterFuncionRealTC?.X.Add(punto.X);
+                        scatterFuncionRealTC?.Y.Add(punto.FX);
+                    }
+
+                    await chart.React();
+                    await InvokeAsync(StateHasChanged);
+
+                    var scatter2_TC = data[1] as Scatter;
+                    scatter2_TC?.X.Add(puntosTrpecioC[0].X);
+                    scatter2_TC?.Y.Add(puntosTrpecioC[0].FX);
+                    scatter2_TC?.X.Add(puntosFuncionRealTC[puntosFuncionRealTC.Count - 1].X);
+                    scatter2_TC?.Y.Add(puntosFuncionRealTC[puntosFuncionRealTC.Count - 1].FX);
+
+                    await chart.React();
+                    await InvokeAsync(StateHasChanged);
                     break;
 
                 case "simpson_13_simple":
@@ -160,11 +189,11 @@ public partial class Actividad5
                     await chart.React();
                     await InvokeAsync(StateHasChanged);
 
-                    var scatter2_TS = data[1] as Scatter;
-                    scatter2_TS?.X.Add(puntosSimpson13[0].X);
-                    scatter2_TS?.Y.Add(puntosSimpson13[0].FX);
-                    scatter2_TS?.X.Add(puntosSimpson13[puntosSimpson13.Count - 1].X);
-                    scatter2_TS?.Y.Add(puntosSimpson13[puntosSimpson13.Count - 1].FX);
+                    var scatter2_13 = data[1] as Scatter;
+                    scatter2_13?.X.Add(puntosSimpson13[0].X);
+                    scatter2_13?.Y.Add(puntosSimpson13[0].FX);
+                    scatter2_13?.X.Add(puntosSimpson13[puntosSimpson13.Count - 1].X);
+                    scatter2_13?.Y.Add(puntosSimpson13[puntosSimpson13.Count - 1].FX);
 
                     await chart.React();
                     await InvokeAsync(StateHasChanged);
