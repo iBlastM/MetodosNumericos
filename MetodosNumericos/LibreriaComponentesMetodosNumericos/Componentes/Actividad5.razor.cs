@@ -2,7 +2,6 @@
 using MetodosInterpolacion;
 using NCalc;
 using Plotly.Blazor;
-using Plotly.Blazor.LayoutLib.MapBoxLib.LayerLib;
 using Plotly.Blazor.Traces;
 using System.Globalization;
 using System.Text.RegularExpressions;
@@ -26,7 +25,10 @@ public partial class Actividad5
 
     protected override void OnInitialized()
     {
-        config = new Config();
+        config = new Config
+        {
+            Responsive = true
+        };
         layout = new();
         data = new List<ITrace>
             {
@@ -282,6 +284,34 @@ public partial class Actividad5
                     mensajeErrorSubIntervalosNoValidos = string.Empty;
                     SimpsonTresOctavosCompuesta simpsonTresOctavosCompuesta = new SimpsonTresOctavosCompuesta(expresion);
                     resultado = simpsonTresOctavosCompuesta.Integrar(aNumerico, bNumerico, n);
+
+                    List<Punto> puntosSimpsonCompuesta = simpsonTresOctavosCompuesta.obtenerPuntosGraficar(aNumerico, bNumerico, n);
+                    List<Punto> puntosFuncionRealCompuesta = simpsonTresOctavosCompuesta.obtenerPuntosGraficarFuncionReal(aNumerico, bNumerico);
+                    LimpiarGrafica();
+                    var scatterCompuesto38 = data[0] as Scatter;
+                    foreach (var punto in puntosSimpsonCompuesta)
+                    {
+                        scatterCompuesto38?.X.Add(punto.X);
+                        scatterCompuesto38?.Y.Add(punto.FX);
+                    }
+
+                    var scatterFuncionRealCompuesto38 = data[2] as Scatter;
+                    foreach (var punto in puntosFuncionRealCompuesta)
+                    {
+                        scatterFuncionRealCompuesto38?.X.Add(punto.X);
+                        scatterFuncionRealCompuesto38?.Y.Add(punto.FX);
+                    }
+                    await chart.React();
+                    await InvokeAsync(StateHasChanged);
+
+                    var scatterlimites = data[1] as Scatter;
+                    scatterlimites?.X.Add(puntosSimpsonCompuesta[0].X);
+                    scatterlimites?.Y.Add(puntosSimpsonCompuesta[0].FX);
+                    scatterlimites?.X.Add(puntosSimpsonCompuesta[puntosSimpsonCompuesta.Count - 1].X);
+                    scatterlimites?.Y.Add(puntosSimpsonCompuesta[puntosSimpsonCompuesta.Count - 1].FX);
+
+                    await chart.React();
+                    await InvokeAsync(StateHasChanged);
 
                     break;
             }

@@ -1,5 +1,4 @@
 using MetodosInterpolacion;
-using MetodosInterpolacion.Metodos;
 using NCalc;
 
 namespace MetodosIntegracion.Metodos
