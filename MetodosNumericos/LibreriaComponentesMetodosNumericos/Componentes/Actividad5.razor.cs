@@ -314,6 +314,36 @@ public partial class Actividad5
                     await InvokeAsync(StateHasChanged);
 
                     break;
+
+                case "gauss":
+                    IntegracionGaussiana gaussiana = new IntegracionGaussiana(expresion);
+                    resultado = gaussiana.Integrar(aNumerico, bNumerico, n);
+                    List<Punto> puntosGauss = gaussiana.obtenerPuntosGraficar(aNumerico, bNumerico, gaussiana.puntos);
+                    List<Punto> puntosFuncionRealGauss = gaussiana.obtenerPuntosGraficarFuncionReal(aNumerico, bNumerico);
+                    LimpiarGrafica();
+                    var scatterGauss = data[0] as Scatter;
+                    foreach (var punto in puntosGauss)
+                    {
+                        scatterGauss?.X.Add(punto.X);
+                        scatterGauss?.Y.Add(punto.FX);
+                    }
+                    var scatterFuncionRealGauss = data[2] as Scatter;
+                    foreach (var punto in puntosFuncionRealGauss)
+                    {
+                        scatterFuncionRealGauss?.X.Add(punto.X);
+                        scatterFuncionRealGauss?.Y.Add(punto.FX);
+                    }
+                    await chart.React();
+                    await InvokeAsync(StateHasChanged);
+                    var scatterGaussLimites = data[1] as Scatter;
+                    scatterGaussLimites?.X.Add(puntosGauss[0].X);
+                    scatterGaussLimites?.Y.Add(puntosGauss[0].FX);
+                    scatterGaussLimites?.X.Add(puntosGauss[puntosGauss.Count - 1].X);
+                    scatterGaussLimites?.Y.Add(puntosGauss[puntosGauss.Count - 1].FX);
+                    await chart.React();
+                    await InvokeAsync(StateHasChanged);
+
+                    break;
             }
         }
         catch (Exception ex)
