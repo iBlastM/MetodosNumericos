@@ -318,7 +318,7 @@ public partial class Actividad5
                 case "gauss":
                     IntegracionGaussiana gaussiana = new IntegracionGaussiana(expresion);
                     resultado = gaussiana.Integrar(aNumerico, bNumerico, n);
-                    List<Punto> puntosGauss = gaussiana.obtenerPuntosGraficar(aNumerico, bNumerico, gaussiana.puntos);
+                    List<Punto> puntosGauss = gaussiana.puntos;
                     List<Punto> puntosFuncionRealGauss = gaussiana.obtenerPuntosGraficarFuncionReal(aNumerico, bNumerico);
                     LimpiarGrafica();
                     var scatterGauss = data[0] as Scatter;

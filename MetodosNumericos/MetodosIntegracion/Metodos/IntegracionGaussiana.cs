@@ -73,18 +73,6 @@ public class IntegracionGaussiana(string expr) : MetodoIntegracion
         return (n * (x * p1 - p0) / (x * x - 1), p1);
     }
 
-    public List<Punto> obtenerPuntosGraficar(double a, double b, List<Punto> puntos)
-    {
-        double xParaEvaluar = a + (b - a) / 2;
-        double distanciaEntrePuntos = (b - a) / 2;
-
-        var lagrange = new InterpolacionLagrange(puntos, puntos.Count - 1, xParaEvaluar, distanciaEntrePuntos);
-        lagrange.poqutiosPuntos = true;
-        double resultado = lagrange.CalcularInterpolacion();
-        List<Punto> puntosGrafica = lagrange.puntosGraficar;
-        return puntosGrafica;
-    }
-
     public List<Punto> obtenerPuntosGraficarFuncionReal(double a, double b)
     {
         List<Punto> puntos = new List<Punto>();
