@@ -103,9 +103,19 @@ public partial class Actividad4
                     pasos = pivoteoEscalado.pasos;
                 }
                 break;
+            case "Cholesky":
+                Cholesky cholesky = new(helpers.terminos);
+                Console.WriteLine("Este es un mensaje en la consola");
+                if (tieneSolucion = cholesky.CalcularSoluciones(MatrizAmpliada.Clone() as double[,]))
+                {
+                    pasos = cholesky.pasos;
+                }
+                break;
+
+
         }
 
-        if(!tieneSolucion)
+        if (!tieneSolucion)
         {
             mensajeErrorSistemaSinSolucion = "El sistema no tiene solución o tiene soluciones infinitas";
         }

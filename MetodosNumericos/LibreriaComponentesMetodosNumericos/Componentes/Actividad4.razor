@@ -48,6 +48,8 @@
         <option value="HaciaAtras">Eliminación Gaussiana con sustitución hacia atrás</option>
         <option value="PivoteoMaximo">Eliminación Gaussiana con Pivoteo Máximo de Columnas</option>
         <option value="PivoteoEscalado">Eliminación Gaussiana con Pivoteo Escalado de Columna.</option>
+        <option value="Cholesky">Factorización de Cholesky.</option>
+        <option value="LU">LU.</option>
     </select>
 
     <div class="d-flex justify-content-center mt-3">
@@ -142,6 +144,32 @@
                     }
 
                 break;
+
+                case "Cholesky":
+                    <h6>Matriz Ampliada inicial:</h6>
+                    <pre>@MostrarMatrizAmpliada(MatrizAmpliadaInicial)</pre>
+
+                    int l = 1;
+
+                    @foreach (var paso in pasos)
+                    {
+                        <p>Paso @l: @paso.operacion</p>
+
+                        @if (l <= pasos.Count - helpers.terminos.Count)
+                        {
+                            <h6>Matriz L después del paso @l:</h6>
+                            <pre>@MostrarMatrizAmpliada(paso.matriz)</pre>
+                        }
+                        l++;
+                    }
+
+                    <h6>Soluciones:</h6>
+                    @foreach (Termino termino in helpers.terminos)
+                    {
+                        <h6>@termino.Variable: @termino.Solucion</h6>
+                    }
+                    break;
+
             }
         </div>
     }
