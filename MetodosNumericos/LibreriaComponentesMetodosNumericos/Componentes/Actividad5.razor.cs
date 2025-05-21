@@ -278,7 +278,7 @@ public partial class Actividad5
                     await chart.React();
                     await InvokeAsync(StateHasChanged);
 
-
+                    rombergTabla = null;
                     break;
 
                 case "simpson_38_compuesto":
@@ -314,7 +314,7 @@ public partial class Actividad5
 
                     await chart.React();
                     await InvokeAsync(StateHasChanged);
-
+                    rombergTabla = null;
                     break;
 
                 case "gauss":
@@ -349,7 +349,34 @@ public partial class Actividad5
                 case "romberg":
                     Romberg romberg = new Romberg(expresion);
                     (resultado, rombergTabla) = romberg.Integrar(aNumerico, bNumerico);
+                    int maxLvl = romberg.ObtenerNivelDesdeTabla(rombergTabla);
+                    List<Punto> puntosRomberg = romberg.obtenerPuntosGraficar(aNumerico, bNumerico, (int)Math.Pow(2,maxLvl));
+                    List<Punto> puntosFuncionRealRomberg = romberg.obtenerPuntosGraficarFuncionReal(aNumerico, bNumerico);
+                    LimpiarGrafica();
+                    var scatterRomberg = data[0] as Scatter;
+                    foreach (var punto in puntosRomberg)
+                    {
+                        scatterRomberg?.X.Add(punto.X);
+                        scatterRomberg?.Y.Add(punto.FX);
+                    }
 
+                    var scatterFuncionRealRomberg = data[2] as Scatter;
+                    foreach (var punto in puntosFuncionRealRomberg)
+                    {
+                        scatterFuncionRealRomberg?.X.Add(punto.X);
+                        scatterFuncionRealRomberg?.Y.Add(punto.FX);
+                    }
+                    await chart.React();
+                    await InvokeAsync(StateHasChanged);
+
+                    var scatterlimitesR = data[1] as Scatter;
+                    scatterlimitesR?.X.Add(puntosRomberg[0].X);
+                    scatterlimitesR?.Y.Add(puntosRomberg[0].FX);
+                    scatterlimitesR?.X.Add(puntosRomberg[puntosRomberg.Count - 1].X);
+                    scatterlimitesR?.Y.Add(puntosRomberg[puntosRomberg.Count - 1].FX);
+
+                    await chart.React();
+                    await InvokeAsync(StateHasChanged);
                     break;
             }
         }

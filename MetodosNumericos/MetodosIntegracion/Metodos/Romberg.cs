@@ -51,7 +51,47 @@ namespace MetodosIntegracion.Metodos
 
             return (R[maxIter - 1, maxIter - 1]!.Value, R);
         }
+        public List<Punto> obtenerPuntosGraficar(double a, double b, int n)
+        {
+            List<Punto> puntosTrapecio = new();
+            double h = (b - a) / n;
 
+            // Subintervalos: puntos superiores de la función
+            for (int i = 0; i <= n; i++)
+            {
+                double x = a + i * h;
+                puntosTrapecio.Add(new Punto
+                {
+                    X = x,
+                    FX = Evaluar(expresion, x)
+                });
+
+                puntosTrapecio.Add(new Punto
+                {
+                    X = x,
+                    FX = 0
+                });
+
+                puntosTrapecio.Add(new Punto
+                {
+                    X = x,
+                    FX = Evaluar(expresion, x)
+                });
+            }
+
+            // Cierra la figura para relleno: bajamos al eje x desde b a a
+            /*for (int i = n; i >= 0; i--)
+            {
+                double x = a + i * h;
+                puntosTrapecio.Add(new Punto
+                {
+                    X = x,
+                    FX = 0
+                });
+            }*/
+
+            return puntosTrapecio;
+        }
 
         public List<Punto> obtenerPuntosGraficarFuncionReal(double a, double b)
         {
@@ -93,5 +133,23 @@ namespace MetodosIntegracion.Metodos
 
             return puntos;
         }
+
+        public int ObtenerNivelDesdeTabla(double?[,] tabla)
+        {
+            int filas = tabla.GetLength(0);
+            int nivel = -1;
+
+            for (int i = 0; i < filas; i++)
+            {
+                if (tabla[i, i].HasValue)
+                    nivel = i;
+                else
+                    break;
+            }
+
+            return nivel; // último nivel donde hay valor
+        }
     }
+
+
 }
