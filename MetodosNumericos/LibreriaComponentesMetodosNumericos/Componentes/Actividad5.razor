@@ -51,6 +51,7 @@
             <option value="simpson_38_simple">Simpson 3/8 Simple</option>
             <option value="simpson_38_compuesto">Simpson 3/8 Compuesto</option>
             <option value="gauss">Integracion Gaussiana</option>
+            <option value="romberg">Integracion Romberg</option>
         </select>
     </div>
 
@@ -73,5 +74,49 @@
         </div>
     }
 </div>
+
+@if (rombergTabla != null)
+{
+    <table class="table table-bordered mt-4">
+        <thead>
+            <tr>
+                <th>i \ j</th>
+                @for (int j = 0; j < rombergTabla.GetLength(1); j++)
+                {
+                    <th>@j</th>
+                }
+            </tr>
+        </thead>
+        <tbody>
+            @for (int i = 0; i < rombergTabla.GetLength(0); i++)
+            {
+                // Verificar si la fila contiene algún valor válido
+                bool filaVacia = true;
+                for (int j = 0; j < rombergTabla.GetLength(1); j++)
+                {
+                    if (rombergTabla[i, j] != null)
+                    {
+                        filaVacia = false;
+                        break;
+                    }
+                }
+
+                // Solo mostrar si hay al menos un valor no nulo
+                if (!filaVacia)
+                {
+                    <tr>
+                        <th>@i</th>
+                        @for (int j = 0; j < rombergTabla.GetLength(1); j++)
+                        {
+                            <td>
+                                @((rombergTabla[i, j] != null) ? rombergTabla[i, j]?.ToString("F6", CultureInfo.InvariantCulture) : "")
+                            </td>
+                        }
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+}
 
 <PlotlyChart @bind-Config="config" @bind-Layout="layout" @bind-Data="data" @ref="chart" />

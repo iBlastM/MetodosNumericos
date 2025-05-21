@@ -14,6 +14,7 @@ public partial class Actividad5
     int n = 4;
     string MetodoSeleccionado = "trapecio_simple";
     double? resultado;
+    private double?[,]? rombergTabla;
     string mensajeErrorSubIntervalosNoValidos = string.Empty;
     string mensajeErrorAlEvaluar = string.Empty;
 
@@ -130,7 +131,7 @@ public partial class Actividad5
 
                     await chart.React();
                     await InvokeAsync(StateHasChanged);
-
+                    rombergTabla = null;
                     break;
 
                 case "trapecio_compuesto":
@@ -165,6 +166,7 @@ public partial class Actividad5
 
                     await chart.React();
                     await InvokeAsync(StateHasChanged);
+                    rombergTabla = null;
                     break;
 
                 case "simpson_13_simple":
@@ -199,7 +201,7 @@ public partial class Actividad5
 
                     await chart.React();
                     await InvokeAsync(StateHasChanged);
-
+                    rombergTabla = null;
                     break;
 
                 case "simpson_13_compuesto":
@@ -241,7 +243,7 @@ public partial class Actividad5
 
                     await chart.React();
                     await InvokeAsync(StateHasChanged);
-
+                    rombergTabla = null;
                     break;
 
 
@@ -342,6 +344,11 @@ public partial class Actividad5
                     scatterGaussLimites?.Y.Add(puntosGauss[puntosGauss.Count - 1].FX);
                     await chart.React();
                     await InvokeAsync(StateHasChanged);
+
+                    break;
+                case "romberg":
+                    Romberg romberg = new Romberg(expresion);
+                    (resultado, rombergTabla) = romberg.Integrar(aNumerico, bNumerico);
 
                     break;
             }
