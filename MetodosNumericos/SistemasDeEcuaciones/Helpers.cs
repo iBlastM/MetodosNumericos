@@ -165,4 +165,38 @@ public class Helpers
 
         return string.Join("\n", filasTexto);
     }
+
+    public string MostrarMatriz(double[,] matriz)
+    {
+        if (matriz == null) return string.Empty;
+
+        int filas = matriz.GetLength(0);
+        int cols = matriz.GetLength(1);
+
+        // Calcular el ancho máximo de cada columna para alinear los números
+        int[] maxAnchoColumna = new int[cols];
+        for (int j = 0; j < cols; j++)
+        {
+            maxAnchoColumna[j] = 0;
+            for (int i = 0; i < filas; i++)
+            {
+                maxAnchoColumna[j] = Math.Max(maxAnchoColumna[j], matriz[i, j].ToString().Length);
+            }
+        }
+
+        var filasTexto = new List<string>();
+        for (int i = 0; i < filas; i++)
+        {
+            var elementos = new List<string>();
+            for (int j = 0; j < cols; j++)
+            {
+                string valor = matriz[i, j].ToString().PadLeft(maxAnchoColumna[j]);
+                elementos.Add(valor);
+            }
+
+            filasTexto.Add("( " + string.Join("  ", elementos) + " )");
+        }
+
+        return string.Join("\n", filasTexto);
+    }
 }

@@ -1,4 +1,5 @@
-﻿@using SistemasDeEcuaciones
+﻿@using Microsoft.AspNetCore.Components.Forms
+@using SistemasDeEcuaciones
 
 <h3 class="text-center">Actividad 4 - Solución de Sistemas de ecuaciones</h3>
 
@@ -161,6 +162,34 @@
                             <pre>@MostrarMatrizAmpliada(paso.matriz)</pre>
                         }
                         l++;
+                    }
+
+                    <h6>Soluciones:</h6>
+                    @foreach (Termino termino in helpers.terminos)
+                    {
+                        <h6>@termino.Variable: @termino.Solucion</h6>
+                    }
+                    break;
+
+                case "LU":
+                    <h6>Matriz Ampliada inicial:</h6>
+                    <pre>@MostrarMatrizAmpliada(MatrizAmpliadaInicial)</pre>
+
+                    int p = 1;
+
+                    @foreach (var paso in pasosLU)
+                    {
+                        <p>Paso @p: @paso.operacion</p>
+
+                        @if (p <= pasosLU.Count - helpers.terminos.Count)
+                        {
+                            <h6>Matriz L después del paso @p:</h6>
+                            <pre>@MostrarMatriz(paso.matrizL)</pre>
+
+                            <h6>Matriz U después del paso @p:</h6>
+                            <pre>@MostrarMatriz(paso.matrizU)</pre>
+                        }
+                        p++;
                     }
 
                     <h6>Soluciones:</h6>

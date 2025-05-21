@@ -20,6 +20,7 @@ public partial class Actividad4
     private Helpers helpers;
     private string metodoSeleccionado = "Eliminación Gaussiana con sustitución hacia atrás";
     private List<Paso> pasos;
+    private List<PasoLU> pasosLU;
     private bool tieneSolucion = false;
 
     private void GenerarMatrizAmpliada()
@@ -54,6 +55,11 @@ public partial class Actividad4
     private string MostrarMatrizAmpliada(double[,] matrizAmpliada)
     {
         return helpers.MostrarMatrizAmpliada(matrizAmpliada);
+    }
+
+    private string MostrarMatriz(double[,] matriz)
+    {
+        return helpers.MostrarMatriz(matriz);
     }
 
     private void CalcularSoluciones()
@@ -109,6 +115,13 @@ public partial class Actividad4
                 if (tieneSolucion = cholesky.CalcularSoluciones(MatrizAmpliada.Clone() as double[,]))
                 {
                     pasos = cholesky.pasos;
+                }
+                break;
+            case "LU":
+                LU lu = new(helpers.terminos);
+                if (tieneSolucion = lu.CalcularSoluciones(MatrizAmpliada.Clone() as double[,]))
+                {
+                    pasosLU = lu.pasos;
                 }
                 break;
 
